@@ -9,7 +9,7 @@
 //--- MISSION QUOTE END ---
 
 //--- MISSION STRING BEGIN ---
-//[CTF]800 points to win
+//[CTF]600 points to win
 //Each bunker has its own power source.
 //Dropship base turret is self-powered.
 //Neutral self-powered inventory stations in center cave.
@@ -20,7 +20,7 @@
 new SimGroup(MissionGroup) {
 
 	cdTrack = "2";
-	CTF_scoreLimit = "8";
+	CTF_scoreLimit = "6";
 	musicTrack = "badlands";
 	CTF_timeLimit = "25";
 	powerCount = "0";
