@@ -14,10 +14,10 @@
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
-	musicTrack = "desert";
 	cdTrack = "6";
 	powerCount = "0";
 	CTF_scoreLimit = "10";
+	musicTrack = "desert";
 
 	new MissionArea(MissionArea) {
 		area = "-432 -448 944 912";
@@ -55,23 +55,23 @@ new SimGroup(MissionGroup) {
 
 		visibleDistance = "1200";
 		locked = "true";
-		position = "-1024 -1024 0";
 		hazeDistance = "250";
+		position = "-1024 -1024 0";
 	};
 	new NavigationGraph(NavGraph) {
 		conjoinAngleDev = "45";
 		cullDensity = "0.3";
 		customArea = "0 0 0 0";
 
-		rotation = "0 0 0 0";
-		XDimOverSize = "0";
 		scale = "1 1 1";
-		YDimOverSize = "0";
-		coverage = "0";
-		locked = "true";
 		GraphFile = "FrozenHope.nav";
-		position = "0 0 0 1";
 		conjoinBowlDev = "20";
+		XDimOverSize = "0";
+		locked = "true";
+		position = "0 0 0 1";
+		YDimOverSize = "0";
+		rotation = "0 0 0 0";
+		coverage = "0";
 	};
 	new SimGroup(ObserverDropPoints) {
 
@@ -160,14 +160,14 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				Target = "33";
+				isHome = "1";
 				originalPosition = "44.3843 -124.008 140.6 0 0 -0.999999 0.0100068";
 				className = "FlagObj";
-				isHome = "1";
 				searchSchedule = "63603";
 				team = "1";
-				WayPoint = "8656";
-				Trigger = "8657";
+				WayPoint = "5928";
+				Trigger = "5929";
+				Target = "33";
 			};
 		};
 		new SimGroup(Team2) {
@@ -192,7 +192,7 @@ new SimGroup(MissionGroup) {
 					outdoorWeight = "100";
 				};
 				new SpawnSphere() {
-					position = "226.747 369.067 203.266";
+					position = "186.569 326.663 182.066";
 					rotation = "-0 0 -1 0.573347";
 					scale = "1 1 1";
 					dataBlock = "SpawnSphereMarker";
@@ -216,14 +216,14 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				Target = "34";
+				isHome = "1";
 				originalPosition = "106.345 190.324 144.736 0 0 -1 0.100004";
 				className = "FlagObj";
-				isHome = "1";
 				searchSchedule = "63603";
 				team = "2";
-				WayPoint = "8658";
-				Trigger = "8659";
+				WayPoint = "5930";
+				Trigger = "5931";
+				Target = "34";
 			};
 		};
 		new SimGroup(Team0) {
@@ -322,8 +322,8 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				Target = "-1";
 				team = "0";
+				Target = "-1";
 			};
 			new InteriorInstance(InteriorInstance) {
 				position = "675.335 556.363 290.894";
@@ -372,7 +372,11 @@ new SimGroup(MissionGroup) {
 	};
 	new SimGroup(RandomOrganics) {
 
+		powerCount = "0";
+
 		new SimGroup(Addition1BEPlant1) {
+
+			powerCount = "0";
 
 			new TSStatic() {
 				position = "-420 -276 225.444";
@@ -538,7 +542,7 @@ new SimGroup(MissionGroup) {
 			};
 			new TSStatic() {
 				position = "-300 -132 113.959";
-				rotation = "-0.00860938 0.540231 -0.841473 34.1685";
+				rotation = "-0.00860937 0.540231 -0.841473 34.1685";
 				scale = "1.9 1.9 1.9";
 				shapeName = "borg1.dts";
 			};
@@ -616,6 +620,8 @@ new SimGroup(MissionGroup) {
 			};
 		};
 		new SimGroup(Addition2BEPlant5) {
+
+			powerCount = "0";
 
 			new TSStatic() {
 				position = "-36 188 141.234";
@@ -763,7 +769,7 @@ new SimGroup(MissionGroup) {
 			};
 			new TSStatic() {
 				position = "276 -188 177.344";
-				rotation = "0.275703 0.340358 -0.898969 94.0981";
+				rotation = "0.275703 0.340358 -0.898969 94.0982";
 				scale = "1 1 1";
 				shapeName = "borg5.dts";
 			};
@@ -775,7 +781,7 @@ new SimGroup(MissionGroup) {
 			};
 			new TSStatic() {
 				position = "-332 -308 244.125";
-				rotation = "0.258752 0.0308051 0.965452 97.9994";
+				rotation = "0.258752 0.0308051 0.965452 97.9993";
 				scale = "1.3 1.3 1.3";
 				shapeName = "borg5.dts";
 			};
