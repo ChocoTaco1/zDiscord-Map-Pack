@@ -16,11 +16,11 @@
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
-	CTF_scoreLimit = "8";
-	cdTrack = "2";
-	powerCount = "0";
 	CTF_timeLimit = "25";
+	CTF_scoreLimit = "8";
+	powerCount = "0";
 	musicTrack = "lush";
+	cdTrack = "2";
 
 	new MissionArea(MissionArea) {
 		area = "-632 -496 1248 1040";
@@ -35,7 +35,7 @@ new SimGroup(MissionGroup) {
 		scale = "1 1 1";
 		direction = "0.57735 0.57735 -0.57735";
 		color = "0.600000 0.600000 0.600000 1.000000";
-		ambient = "0.200000 0.200000 0.200000 1.000000";
+		ambient = "0.350000 0.350000 0.350000 1.000000";
 		texture[0] = "special/sunFlare";
 		texture[1] = "special/sunFlare02";
 		texture[2] = "special/LensFlare/flare01";
@@ -58,23 +58,23 @@ new SimGroup(MissionGroup) {
 
 		visibleDistance = "1200";
 		locked = "true";
-		position = "-1024 -1024 0";
 		hazeDistance = "250";
+		position = "-1024 -1024 0";
 	};
 	new NavigationGraph(NavGraph) {
 		conjoinAngleDev = "45";
 		cullDensity = "0.3";
 		customArea = "0 0 0 0";
 
-		locked = "true";
-		YDimOverSize = "0";
+		conjoinBowlDev = "20";
+		scale = "1 1 1";
 		GraphFile = "Abominable.nav";
+		locked = "true";
+		coverage = "0";
+		YDimOverSize = "0";
 		position = "0 0 0 1";
 		XDimOverSize = "0";
 		rotation = "0 0 0 0";
-		conjoinBowlDev = "20";
-		scale = "1 1 1";
-		coverage = "0";
 	};
 	new Sky(Sky) {
 		position = "-1216 -848 0";
@@ -266,13 +266,13 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				className = "FlagObj";
-				Target = "34";
-				team = "1";
-				WayPoint = "5463";
-				Trigger = "5464";
-				originalPosition = "331.595 -5.52134 78.9597 0 0 -1 1.5708";
 				isHome = "1";
+				Target = "34";
+				className = "FlagObj";
+				team = "1";
+				WayPoint = "5884";
+				Trigger = "5885";
+				originalPosition = "331.595 -5.52134 78.9597 0 0 -1 1.5708";
 			};
 			new StaticShape() {
 				position = "370.691 -5.64911 91.819";
@@ -313,11 +313,11 @@ new SimGroup(MissionGroup) {
 				lockCount = "0";
 				homingCount = "0";
 
+				notReady = "1";
 				Target = "36";
 				inUse = "Down";
-				Trigger = "5406";
+				Trigger = "5827";
 				team = "1";
-				notReady = "1";
 			};
 			new StaticShape() {
 				position = "167.401 -0.269501 90.3279";
@@ -328,11 +328,11 @@ new SimGroup(MissionGroup) {
 				lockCount = "0";
 				homingCount = "0";
 
+				notReady = "1";
 				Target = "37";
 				inUse = "Down";
-				Trigger = "5408";
+				Trigger = "5829";
 				team = "1";
-				notReady = "1";
 			};
 			new InteriorInstance() {
 				position = "366.113 10.3352 80.4591";
@@ -471,13 +471,13 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				className = "FlagObj";
-				Target = "38";
-				team = "2";
-				WayPoint = "5465";
-				Trigger = "5466";
-				originalPosition = "-336.993 -5.34563 79.2329 0 0 1 1.5708";
 				isHome = "1";
+				Target = "38";
+				className = "FlagObj";
+				team = "2";
+				WayPoint = "5886";
+				Trigger = "5887";
+				originalPosition = "-336.993 -5.34563 79.2329 0 0 1 1.5708";
 			};
 			new Turret() {
 				position = "-180.015 -6.04355 105.619";
@@ -561,7 +561,7 @@ new SimGroup(MissionGroup) {
 				homingCount = "0";
 
 				Target = "41";
-				Trigger = "5432";
+				Trigger = "5853";
 				team = "2";
 			};
 			new StaticShape() {
@@ -574,7 +574,7 @@ new SimGroup(MissionGroup) {
 				homingCount = "0";
 
 				Target = "42";
-				Trigger = "5434";
+				Trigger = "5855";
 				team = "2";
 			};
 			new InteriorInstance() {
@@ -623,14 +623,14 @@ new SimGroup(MissionGroup) {
 				removeWetEdges = "1";
 
 				params3 = "1.21 -0.61 0.13 -0.33";
+				textureSize = "32 32";
+				extent = "100 100 10";
 				params0 = "0.32 -0.67 0.066 0.5";
-				team = "0";
+				seedPoints = "0 0 1 0 1 1 0 1";
 				params2 = "0.39 0.39 0.2 0.133";
+				team = "0";
 				params1 = "0.63 -2.41 0.33 0.21";
 				floodFill = "1";
-				textureSize = "32 32";
-				seedPoints = "0 0 1 0 1 1 0 1";
-				extent = "100 100 10";
 			};
 			new WaterBlock(water1) {
 				position = "-320 -48 23.1736";
@@ -647,14 +647,14 @@ new SimGroup(MissionGroup) {
 				removeWetEdges = "1";
 
 				params3 = "1.21 -0.61 0.13 -0.33";
+				textureSize = "32 32";
+				extent = "100 100 10";
 				params0 = "0.32 -0.67 0.066 0.5";
-				team = "0";
+				seedPoints = "0 0 1 0 1 1 0 1";
 				params2 = "0.39 0.39 0.2 0.133";
+				team = "0";
 				params1 = "0.63 -2.41 0.33 0.21";
 				floodFill = "1";
-				textureSize = "32 32";
-				seedPoints = "0 0 1 0 1 1 0 1";
-				extent = "100 100 10";
 			};
 		};
 	};
