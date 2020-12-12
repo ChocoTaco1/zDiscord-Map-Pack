@@ -1004,7 +1004,7 @@ new SimGroup(MissionGroup) {
 
 					Target = "75";
 					locked = "true";
-					name = "Center";
+					name = "Outpost";
 					team = "0";
 					Projector = "0";
 				};
@@ -1031,7 +1031,7 @@ new SimGroup(MissionGroup) {
 					dataBlock = "WayPointMarker";
 					lockCount = "0";
 					homingCount = "0";
-					name = "Center";
+					name = "Outpost";
 					team = "0";
 
 					locked = "true";
