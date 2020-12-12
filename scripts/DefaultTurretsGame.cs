@@ -1,13 +1,11 @@
 // DefaultTurrets.cs
-// Restore Default Turret count at the end of the match + MPB
+// Restore Default Turret count at the end of the match
 // Some maps in this map use non-default turret numbers
 
 $DMP::indoorMinDef  = $TeamDeployableMin[TurretIndoorDeployable];
 $DMP::outdoorMinDef = $TeamDeployableMin[TurretOutdoorDeployable];
 $DMP::indoorMaxDef  = $TeamDeployableMax[TurretIndoorDeployable];
 $DMP::outdoorMaxDef = $TeamDeployableMax[TurretOutdoorDeployable];
-
-$DMP::vehicleMPBMax = $VehicleMax[MobileBaseVehicle];
 
 package turretDefaults
 {
@@ -20,8 +18,6 @@ function DefaultGame::gameOver( %game )
 	$TeamDeployableMin[TurretOutdoorDeployable] = $DMP::outdoorMinDef;
 	$TeamDeployableMax[TurretIndoorDeployable]  = $DMP::indoorMaxDef;
 	$TeamDeployableMax[TurretOutdoorDeployable] = $DMP::outdoorMaxDef;
-	
-	$VehicleMax[MobileBaseVehicle] = $DMP::vehicleMPBMax;
 }
 
 };
