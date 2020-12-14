@@ -97,7 +97,7 @@ Contents:
 --MoonDance: Mirrored Moondance, similar to the original
 --Pantheon: 50% smaller than the Final Dynamix Mappack original
 --Paranoia: Tribes Aerial Assault map someone made, light modifications
---Pariah: Mirrored, Similar to the original
+--Pariah: Similar to the original
 --RavineV: Once popular map, added Vpad
 --Spincycle: T1 map, smoothed out and spread out a little more
 --StarFall: Started out with T1 terrain, Reverted to mordacity style terrain
@@ -126,11 +126,11 @@ Rooster Original Missions also includes:
 --autoexec
 ---InvincibleInv.cs: So the server will know not to allow SmallCrossing Invs to be damaged
 ---RegisterShapes.cs: This adds our shapes we made. Includes two autumn trees, T2 vending machine, and plant asset used on wasteland
----DefaultTurrents.cs: Allows more turrent on some maps and resets them at gameover
 ---dmpVersionCheck.cs: Tell the server what version of the pack the client has. This is mainly used for the server logo to be used or not. But can be used for debugging purposes.
 --CreativityGame.cs: These are the JumpPads used on some maps.
 --HothFFsGame.cs: These are the custom Hoth Screen Datablocks used in the Hoth base.
 --TeleportGame.cs: This is the warp pad used on some maps.
+--DefaultTurrentsGame.cs: Allows more turrent on some maps and resets them at gameover
 
 -Shapes
 --borg16 and borg19 Autumn: Custom made autumn trees. (Wasn't used anywhere in the mappack)
