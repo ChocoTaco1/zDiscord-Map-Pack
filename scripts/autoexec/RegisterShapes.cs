@@ -30,3 +30,4 @@ $CSObjects[$CSObjCount++] = "Misc TNMug rst-TNmug.dts";
 $CSObjects[$CSObjCount++] = "Misc Turtle rst-turtle.dts";
 $CSObjects[$CSObjCount++] = "Misc Samifin rst-samifin.dts";
 $CSObjects[$CSObjCount++] = "Misc ChocoTaco rst-chocotaco.dts";
+$CSObjects[$CSObjCount++] = "Misc SantaHat rst-santahat.dts";
