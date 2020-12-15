@@ -100,7 +100,7 @@ new SimGroup(MissionGroup) {
 		fogVolume2 = "0 0 0";
 		fogVolume3 = "0 0 0";
 		materialList = "eve8.dml";
-		windVelocity = "100 0 0";
+		windVelocity = "0 0 0";
 		windEffectPrecipitation = "0";
 		fogVolumeColor1 = "128.000000 128.000000 128.000000 0.000000";
 		fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000000";
