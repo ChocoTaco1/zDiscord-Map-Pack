@@ -7,18 +7,18 @@
 //--- MISSION QUOTE END ---
 
 //--- MISSION STRING BEGIN ---
-//[CTF]1000 points to win
+//[CTF]1200 points to win
 //<color:008B8B>Map by Rooster128
 //--- MISSION STRING END ---
 
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
 
-	CTF_timeLimit = "10";
+	CTF_timeLimit = "25";
 	powerCount = "0";
 	musicTrack = "badlands";
 	cdTrack = "2";
-	CTF_scoreLimit = "10";
+	CTF_scoreLimit = "12";
 
 	new MissionArea(MissionArea) {
 		area = "-272 -272 560 528";
