@@ -7,7 +7,7 @@
 //--- MISSION QUOTE END ---
 
 //--- MISSION STRING BEGIN ---
-//[CTF]800 points to win
+//[CTF]600 points to win
 //Bases powered by generator and solar panel.
 //<color:008B8B>Map by Rooster128, base concept by Halo2
 //--- MISSION STRING END ---
@@ -16,7 +16,7 @@
 new SimGroup(MissionGroup) {
 
 	musicTrack = "ice";
-	CTF_scoreLimit = "8";
+	CTF_scoreLimit = "6";
 	CTF_timeLimit = "25";
 	powerCount = "0";
 	cdTrack = "2";
