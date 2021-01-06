@@ -3,7 +3,7 @@
 
 //--- MISSION QUOTE BEGIN ---
 //It's a marvelous night for
-//a moondance.  With the stars 
+//a moondance.  With the stars
 //up above in your eyes.
 //  -- Van Morrison
 //--- MISSION QUOTE END ---
@@ -820,18 +820,6 @@ new SimGroup(MissionGroup) {
 					Target = "43";
 					team = "1";
 				};
-				new PhysicalZone() {
-					position = "-41.0672 -425.892 117.924";
-					rotation = "1 0 0 30";
-					scale = "18 1 15";
-					velocityMod = "0.1";
-					gravityMod = "1";
-					appliedForce = "0 0 0";
-					polyhedron = "0.0000000 1.0000000 0.0000000 1.0000000 0.0000000 0.0000000 -0.0000000 -1.0000000 -0.0000000 -0.0000000 -0.0000000 1.0000000";
-
-					team = "1";
-					ffield = "5717";
-				};
 				new ForceFieldBare(ff2) {
 					position = "-41.0672 -425.892 117.924";
 					rotation = "1 0 0 30";
@@ -845,18 +833,6 @@ new SimGroup(MissionGroup) {
 					team = "1";
 					pz = "8802";
 					originalscale = "18 1 15";
-				};
-				new PhysicalZone() {
-					position = "-46.6322 -422.182 119.122";
-					rotation = "1 0 0 0";
-					scale = "1 23 12";
-					velocityMod = "0.1";
-					gravityMod = "1";
-					appliedForce = "0 0 0";
-					polyhedron = "0.0000000 1.0000000 0.0000000 1.0000000 0.0000000 0.0000000 -0.0000000 -1.0000000 -0.0000000 -0.0000000 -0.0000000 1.0000000";
-
-					team = "1";
-					ffield = "5714";
 				};
 				new ForceFieldBare(ff1) {
 					position = "-46.6322 -422.182 119.122";
@@ -1607,18 +1583,6 @@ new SimGroup(MissionGroup) {
 					Target = "58";
 					team = "2";
 				};
-				new PhysicalZone() {
-					position = "32.7349 407.332 118.724";
-					rotation = "0.00279455 -0.258819 0.965922 178.805";
-					scale = "18 1 15";
-					velocityMod = "0.1";
-					gravityMod = "1";
-					appliedForce = "0 0 0";
-					polyhedron = "0.0000000 1.0000000 0.0000000 1.0000000 0.0000000 0.0000000 -0.0000000 -1.0000000 -0.0000000 -0.0000000 -0.0000000 1.0000000";
-
-					team = "2";
-					ffield = "5717";
-				};
 				new ForceFieldBare(ff2) {
 					position = "32.7349 407.332 118.724";
 					rotation = "0.00279455 -0.258819 0.965922 178.805";
@@ -1632,18 +1596,6 @@ new SimGroup(MissionGroup) {
 					team = "2";
 					pz = "8890";
 					originalscale = "18 1 15";
-				};
-				new PhysicalZone() {
-					position = "38.3786 403.743 119.922";
-					rotation = "0 0 1 178.763";
-					scale = "1 23 12";
-					velocityMod = "0.1";
-					gravityMod = "1";
-					appliedForce = "0 0 0";
-					polyhedron = "0.0000000 1.0000000 0.0000000 1.0000000 0.0000000 0.0000000 -0.0000000 -1.0000000 -0.0000000 -0.0000000 -0.0000000 1.0000000";
-
-					team = "2";
-					ffield = "5714";
 				};
 				new ForceFieldBare(ff1) {
 					position = "38.3786 403.743 119.922";
