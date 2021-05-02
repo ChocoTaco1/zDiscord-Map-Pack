@@ -18,10 +18,10 @@
 new SimGroup(MissionGroup) {
 
 	CTF_timeLimit = "25";
-	powerCount = "0";
+	musicTrack = "volcanic";
 	CTF_scoreLimit = "7";
 	cdTrack = "3";
-	musicTrack = "volcanic";
+	powerCount = "0";
 
 	new MissionArea(MissionArea) {
 		area = "-688 -832 1488 1536";
@@ -57,25 +57,25 @@ new SimGroup(MissionGroup) {
 		terrainFile = "LavaGods.ter";
 		squareSize = "8";
 
+		visibleDistance = "1200";
 		locked = "true";
 		position = "-1024 -1024 0";
 		hazeDistance = "250";
-		visibleDistance = "1200";
 	};
 	new NavigationGraph(NavGraph) {
 		conjoinAngleDev = "45";
 		cullDensity = "0.3";
 		customArea = "0 0 0 0";
 
-		locked = "true";
-		YDimOverSize = "0";
-		position = "0 0 0 1";
 		coverage = "0";
-		conjoinBowlDev = "20";
-		rotation = "0 0 0 0";
-		GraphFile = "flatice.nav";
-		XDimOverSize = "0";
 		scale = "1 1 1";
+		locked = "true";
+		conjoinBowlDev = "20";
+		position = "0 0 0 1";
+		XDimOverSize = "0";
+		GraphFile = "flatice.nav";
+		YDimOverSize = "0";
+		rotation = "0 0 0 0";
 	};
 	new Sky(Sky) {
 		position = "-1216 -848 0";
@@ -117,8 +117,8 @@ new SimGroup(MissionGroup) {
 
 		new SimGroup(Team1) {
 
-			powerCount = "1";
 			providesPower = "1";
+			powerCount = "1";
 
 			new SimGroup(spawnspheres) {
 
@@ -173,11 +173,11 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 
 					locked = "true";
-					Trigger = "5098";
+					Trigger = "4844";
 					team = "1";
-					Target = "33";
 					inUse = "Down";
 					notReady = "1";
+					Target = "33";
 				};
 				new Turret() {
 					position = "-281.071 -269.262 132.05";
@@ -203,11 +203,11 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 
 					locked = "true";
-					Trigger = "5101";
+					Trigger = "4847";
 					team = "1";
-					Target = "35";
 					inUse = "Down";
 					notReady = "1";
+					Target = "35";
 				};
 				new Item() {
 					position = "-281.081 -269.295 120.341";
@@ -234,11 +234,11 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 
 					locked = "true";
-					Trigger = "5104";
+					Trigger = "4850";
 					team = "1";
-					Target = "36";
 					inUse = "Down";
 					notReady = "1";
+					Target = "36";
 				};
 				new StaticShape() {
 					position = "-290.514 -278.733 120.237";
@@ -250,11 +250,11 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 
 					locked = "true";
-					Trigger = "5106";
+					Trigger = "4852";
 					team = "1";
-					Target = "37";
 					inUse = "Down";
 					notReady = "1";
+					Target = "37";
 				};
 				new StaticShape() {
 					position = "-237.37 -423.599 193.914";
@@ -291,21 +291,21 @@ new SimGroup(MissionGroup) {
 					static = "1";
 					rotate = "1";
 
-					locked = "true";
-					originalPosition = "-281.093 -269.291 148.013 1 0 0 0";
-					team = "1";
-					WayPoint = "5276";
-					Trigger = "5277";
-					Target = "39";
 					className = "FlagObj";
+					locked = "true";
+					team = "1";
+					WayPoint = "5022";
+					Trigger = "5023";
+					Target = "39";
+					originalPosition = "-281.093 -269.291 148.013 1 0 0 0";
 					isHome = "1";
 				};
 			};
 		};
 		new SimGroup(Team2) {
 
-			powerCount = "1";
 			providesPower = "1";
+			powerCount = "1";
 
 			new SimGroup(spawnspheres) {
 
@@ -362,11 +362,11 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 
 					locked = "true";
-					Trigger = "5118";
+					Trigger = "4864";
 					team = "2";
-					Target = "40";
 					inUse = "Down";
 					notReady = "1";
+					Target = "40";
 				};
 				new StaticShape() {
 					position = "249.828 263.421 120.637";
@@ -378,7 +378,7 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 
 					locked = "true";
-					Trigger = "5120";
+					Trigger = "4866";
 					team = "2";
 					Target = "41";
 				};
@@ -421,7 +421,7 @@ new SimGroup(MissionGroup) {
 					Target = "42";
 				};
 				new Item() {
-					position = "259.234 272.845 148.413";
+					position = "90.117 60.3456 101.848";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					nameTag = "Flag";
@@ -429,17 +429,21 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 					collideable = "0";
-					static = "1";
+					static = "0";
 					rotate = "1";
 
-					locked = "true";
-					originalPosition = "259.234 272.845 148.413 1 0 0 0";
-					team = "2";
-					WayPoint = "5278";
-					Trigger = "5279";
-					Target = "43";
+					searchSchedule = "15301";
 					className = "FlagObj";
-					isHome = "1";
+					locked = "true";
+					speed = "0";
+					team = "2";
+					WayPoint = "5024";
+					Trigger = "5025";
+					grabber = "4827";
+					Target = "43";
+					originalPosition = "259.234 272.845 148.413 1 0 0 0";
+					isHome = "0";
+					pass = "0";
 				};
 				new Turret() {
 					position = "259.276 272.865 132.45";
@@ -465,7 +469,7 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 
 					locked = "true";
-					Trigger = "5128";
+					Trigger = "4874";
 					team = "2";
 					Target = "45";
 				};
@@ -479,11 +483,11 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 
 					locked = "true";
-					Trigger = "5130";
+					Trigger = "4876";
 					team = "2";
-					Target = "46";
 					inUse = "Down";
 					notReady = "1";
+					Target = "46";
 				};
 			};
 		};
@@ -987,13 +991,12 @@ new SimGroup(MissionGroup) {
 			locked = "true";
 		};
 		new InteriorInstance() {
-			position = "-318.792 357.311 177.357";
+			position = "-319.479 357.124 176.654";
 			rotation = "-0.825726 -0.52983 0.193536 97.5044";
 			scale = "1 1 1";
 			interiorFile = "drock8.dif";
 			showTerrainInside = "0";
 
-			locked = "true";
 		};
 		new TSStatic() {
 			position = "46.311 324.977 129.317";
@@ -1691,7 +1694,7 @@ new SimGroup(MissionGroup) {
 			scale = "224 256 65";
 			liquidType = "CrustyLava";
 			density = "1";
-			viscosity = "15";
+			viscosity = "3";
 			waveMagnitude = "0";
 			surfaceTexture = "LiquidTiles/Lava";
 			surfaceOpacity = "1";
@@ -1709,7 +1712,7 @@ new SimGroup(MissionGroup) {
 			scale = "192 192 65";
 			liquidType = "CrustyLava";
 			density = "1";
-			viscosity = "15";
+			viscosity = "3";
 			waveMagnitude = "0";
 			surfaceTexture = "LiquidTiles/Lava";
 			surfaceOpacity = "1";
@@ -1727,7 +1730,7 @@ new SimGroup(MissionGroup) {
 			scale = "192 160 65";
 			liquidType = "CrustyLava";
 			density = "1";
-			viscosity = "15";
+			viscosity = "3";
 			waveMagnitude = "0";
 			surfaceTexture = "LiquidTiles/Lava";
 			surfaceOpacity = "1";
