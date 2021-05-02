@@ -341,20 +341,6 @@ new SimGroup(MissionGroup) {
 					lastDamagedBy = "5725";
 					lastDamagedByTeam = "2";
 				};
-				new Trigger() {
-					position = "422.984 -8.15823 127.365";
-					rotation = "0 0 1 176.288";
-					scale = "1 1 1";
-					dataBlock = "stationTrigger";
-					lockCount = "0";
-					homingCount = "0";
-					polyhedron = "-0.7500000 0.7500000 0.1000000 1.5000000 0.0000000 0.0000000 -0.0000000 -1.5000000 -0.0000000 -0.0000000 -0.0000000 2.3000000";
-
-					mainObj = "5846";
-					station = "5846";
-					disableObj = "5846";
-					team = "1";
-				};
 				new InteriorInstance(InteriorInstance) {
 					position = "424.975 -1.83712 127.414";
 					rotation = "-0 0 -1 0.181308";
