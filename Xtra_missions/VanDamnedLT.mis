@@ -17,9 +17,9 @@
 new SimGroup(MissionGroup) {
 
 	powerCount = "0";
+	CTF_timeLimit = "25";
 	CTF_scoreLimit = "8";
 	musicTrack = "desert";
-	CTF_timeLimit = "25";
 	cdTrack = "6";
 
 	new MissionArea(MissionArea) {
@@ -55,24 +55,24 @@ new SimGroup(MissionGroup) {
 		squareSize = "8";
 		emptySquares = "162128 162384 110765 176556 176812";
 
+		hazeDistance = "250";
 		visibleDistance = "1200";
 		locked = "true";
 		position = "-1024 -1024 0";
-		hazeDistance = "250";
 	};
 	new NavigationGraph(NavGraph) {
 		conjoinAngleDev = "45";
 		cullDensity = "0.3";
 		customArea = "0 0 0 0";
 
-		conjoinBowlDev = "20";
-		coverage = "0";
-		scale = "1 1 1";
 		XDimOverSize = "0";
-		locked = "true";
+		scale = "1 1 1";
+		conjoinBowlDev = "20";
 		GraphFile = "Damnation.nav";
-		position = "0 0 0 1";
+		locked = "true";
 		YDimOverSize = "0";
+		coverage = "0";
+		position = "0 0 0 1";
 		rotation = "0 0 0 0";
 	};
 	new Sky(Sky) {
@@ -126,7 +126,7 @@ new SimGroup(MissionGroup) {
 				powerCount = "1";
 			};
 			new Item() {
-				position = "-298.588 -24.004 83.2435";
+				position = "-298.588 -24.004 84.6435";
 				rotation = "1 0 0 0";
 				scale = "1 1 1";
 				nameTag = "Flag";
@@ -137,13 +137,13 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				isHome = "1";
-				originalPosition = "-298.588 -24.004 83.2435 1 0 0 0";
-				Target = "33";
 				className = "FlagObj";
+				Target = "33";
+				originalPosition = "-298.588 -24.004 83.8435 1 0 0 0";
+				isHome = "1";
 				team = "1";
-				WayPoint = "5753";
-				Trigger = "5754";
+				WayPoint = "4880";
+				Trigger = "4881";
 			};
 			new SpawnSphere() {
 				position = "-123.135 1.02257 111.549";
@@ -184,7 +184,7 @@ new SimGroup(MissionGroup) {
 				outdoorWeight = "100";
 			};
 			new Item() {
-				position = "284.889 375.783 85.0173";
+				position = "284.889 375.783 86.6173";
 				rotation = "1 0 0 0";
 				scale = "1 1 1";
 				nameTag = "Flag";
@@ -195,14 +195,14 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				isHome = "1";
-				originalPosition = "284.889 375.783 85.0173 1 0 0 0";
-				Target = "36";
 				className = "FlagObj";
+				Target = "34";
+				originalPosition = "284.889 375.783 85.6173 1 0 0 0";
+				isHome = "1";
 				searchSchedule = "10101";
 				team = "2";
-				WayPoint = "5755";
-				Trigger = "5756";
+				WayPoint = "4882";
+				Trigger = "4883";
 			};
 		};
 		new SimGroup(Team0) {
@@ -257,14 +257,14 @@ new SimGroup(MissionGroup) {
 		envMapIntensity = "1";
 		removeWetEdges = "1";
 
-		params0 = "0.32 -0.67 0.066 0.5";
-		params3 = "1.21 -0.61 0.13 -0.33";
 		extent = "100 100 10";
-		floodFill = "1";
+		params3 = "1.21 -0.61 0.13 -0.33";
 		params1 = "0.63 -2.41 0.33 0.21";
-		params2 = "0.39 0.39 0.2 0.133";
-		textureSize = "32 32";
 		seedPoints = "0 0 1 0 1 1 0 1";
+		params2 = "0.39 0.39 0.2 0.133";
+		params0 = "0.32 -0.67 0.066 0.5";
+		textureSize = "32 32";
+		floodFill = "1";
 	};
 	new WaterBlock(Water) {
 		position = "-400 -312 -3.72741";
@@ -280,14 +280,14 @@ new SimGroup(MissionGroup) {
 		envMapIntensity = "1";
 		removeWetEdges = "1";
 
-		params0 = "0.32 -0.67 0.066 0.5";
-		params3 = "1.21 -0.61 0.13 -0.33";
 		extent = "100 100 10";
-		floodFill = "1";
+		params3 = "1.21 -0.61 0.13 -0.33";
 		params1 = "0.63 -2.41 0.33 0.21";
-		params2 = "0.39 0.39 0.2 0.133";
-		textureSize = "32 32";
 		seedPoints = "0 0 1 0 1 1 0 1";
+		params2 = "0.39 0.39 0.2 0.133";
+		params0 = "0.32 -0.67 0.066 0.5";
+		textureSize = "32 32";
+		floodFill = "1";
 	};
 	new WaterBlock(Water) {
 		position = "128 200 49.9316";
@@ -303,14 +303,14 @@ new SimGroup(MissionGroup) {
 		envMapIntensity = "1";
 		removeWetEdges = "1";
 
-		params0 = "0.32 -0.67 0.066 0.5";
-		params3 = "1.21 -0.61 0.13 -0.33";
 		extent = "100 100 10";
-		floodFill = "1";
+		params3 = "1.21 -0.61 0.13 -0.33";
 		params1 = "0.63 -2.41 0.33 0.21";
-		params2 = "0.39 0.39 0.2 0.133";
-		textureSize = "32 32";
 		seedPoints = "0 0 1 0 1 1 0 1";
+		params2 = "0.39 0.39 0.2 0.133";
+		params0 = "0.32 -0.67 0.066 0.5";
+		textureSize = "32 32";
+		floodFill = "1";
 	};
 	new TSStatic() {
 		position = "0.776892 455.757 134.843";
@@ -325,12 +325,11 @@ new SimGroup(MissionGroup) {
 		interiorFile = "ruin1.dif";
 		showTerrainInside = "0";
 	};
-	new InteriorInstance() {
-		position = "284.566 376.227 61.0071";
+	new TSStatic() {
+		position = "-470.071 665.919 127.195";
 		rotation = "1 0 0 0";
-		scale = "1 1 1";
-		interiorFile = "pplat3.dif";
-		showTerrainInside = "0";
+		scale = "4.51795 3.4091 3.22469";
+		shapeName = "porg6.dts";
 	};
 	new InteriorInstance() {
 		position = "-364.342 -57.3132 94.0845";
@@ -340,10 +339,10 @@ new SimGroup(MissionGroup) {
 		showTerrainInside = "0";
 	};
 	new InteriorInstance(InteriorInstance) {
-		position = "-298.885 -24.5969 59.2237";
-		rotation = "0 1 0 0.0395647";
-		scale = "1 1 1";
-		interiorFile = "pplat3.dif";
+		position = "-298.528 -23.981 83.0456";
+		rotation = "0 0 1 20.6265";
+		scale = "1.1 1.1 1";
+		interiorFile = "anthem_pipestand2-desert.dif";
 		showTerrainInside = "0";
 	};
 	new TSStatic() {
@@ -372,9 +371,18 @@ new SimGroup(MissionGroup) {
 		interiorFile = "ptowr5.dif";
 		showTerrainInside = "0";
 	};
-	new FileObject() {
-	};
-	new FileObject() {
+	new Item() {
+		position = "-213.25 156.655 172.896";
+		rotation = "1 0 0 0";
+		scale = "1 1 1";
+		dataBlock = "RepairKit";
+		lockCount = "0";
+		homingCount = "0";
+		collideable = "0";
+		static = "1";
+		rotate = "0";
+
+		Target = "-1";
 	};
 	new Item() {
 		position = "357.046 396.701 94.7712";
@@ -446,24 +454,12 @@ new SimGroup(MissionGroup) {
 		scale = "1 1 1";
 		shapeName = "porg3.dts";
 	};
-	new TSStatic() {
-		position = "-470.071 665.919 127.195";
-		rotation = "1 0 0 0";
-		scale = "4.51795 3.4091 3.22469";
-		shapeName = "porg6.dts";
-	};
-	new Item() {
-		position = "-213.25 156.655 172.896";
-		rotation = "1 0 0 0";
-		scale = "1 1 1";
-		dataBlock = "RepairKit";
-		lockCount = "0";
-		homingCount = "0";
-		collideable = "0";
-		static = "1";
-		rotate = "0";
-
-		Target = "-1";
+	new InteriorInstance(InteriorInstance) {
+		position = "284.978 375.745 84.8538";
+		rotation = "0 0 1 20.0536";
+		scale = "1.1 1.1 1";
+		interiorFile = "anthem_pipestand2-desert.dif";
+		showTerrainInside = "0";
 	};
 };
 //--- OBJECT WRITE END ---
