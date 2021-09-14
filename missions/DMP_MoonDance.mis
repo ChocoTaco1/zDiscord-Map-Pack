@@ -19,10 +19,10 @@
 new SimGroup(MissionGroup) {
 
 	cdTrack = "2";
-	musicTrack = "lush";
-	powerCount = "0";
 	CTF_timeLimit = "25";
+	musicTrack = "lush";
 	CTF_scoreLimit = "10";
+	powerCount = "0";
 
 	new MissionArea(MissionArea) {
 		area = "-744 -784 1520 1552";
@@ -57,27 +57,27 @@ new SimGroup(MissionGroup) {
 		detailTexture = "details/lushdet1";
 		terrainFile = "MoonDance2.ter";
 		squareSize = "8";
-		emptySquares = "84096 149887 281213 281469 150402 478333 609659 282240 282496 217217 217473 217729 162644 162900 163156 294484 294740 163924 164180 164436 240508 240764 241020 306811 307067 307073 635003 504187 438908 308094 439422 243070 112254";
+		emptySquares = "84096 215422 412283 281469 478333 609659 675450 282490 216961 217217 217473 217729 217985 162644 162900 163156 294484 294740 163924 164180 164436 240508 240764 241020 175740 175996 307073 700539 700795 701051 504702 373886 243070 112254";
 
-		position = "-1024 -1024 0";
-		hazeDistance = "250";
-		visibleDistance = "1200";
 		locked = "true";
+		position = "-1024 -1024 0";
+		visibleDistance = "1200";
+		hazeDistance = "250";
 	};
 	new NavigationGraph(NavGraph) {
 		conjoinAngleDev = "45";
 		cullDensity = "0.3";
 		customArea = "0 0 0 0";
 
-		position = "0 0 0 1";
-		coverage = "0";
-		YDimOverSize = "0";
-		rotation = "0 0 0 0";
-		XDimOverSize = "0";
-		scale = "1 1 1";
 		locked = "true";
-		GraphFile = "MissionBlank.nav";
+		position = "0 0 0 1";
+		XDimOverSize = "0";
+		rotation = "0 0 0 0";
 		conjoinBowlDev = "20";
+		coverage = "0";
+		GraphFile = "MissionBlank.nav";
+		scale = "1 1 1";
+		YDimOverSize = "0";
 	};
 	new Sky(Sky) {
 		position = "0 0 0";
@@ -110,8 +110,8 @@ new SimGroup(MissionGroup) {
 		high_fogVolume2 = "-1 -1991.03 nan";
 		high_fogVolume3 = "-1 7945.87 7.22445e-09";
 
-		cloudSpeed0 = "0.0000003 0.0000003";
 		locked = "true";
+		cloudSpeed0 = "0.0000003 0.0000003";
 	};
 	new SimGroup(Teams) {
 
@@ -130,7 +130,7 @@ new SimGroup(MissionGroup) {
 				powerCount = "1";
 
 				new SpawnSphere() {
-					position = "69.3419 -346.753 109.674";
+					position = "69.3419 -336.753 109.674";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					dataBlock = "SpawnSphereMarker";
@@ -142,7 +142,7 @@ new SimGroup(MissionGroup) {
 					outdoorWeight = "100";
 				};
 				new SpawnSphere() {
-					position = "-36.5172 -354.245 128.65";
+					position = "-36.5172 -344.245 128.65";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					dataBlock = "SpawnSphereMarker";
@@ -154,7 +154,7 @@ new SimGroup(MissionGroup) {
 					outdoorWeight = "100";
 				};
 				new InteriorInstance() {
-					position = "14.0318 -474.149 97.849";
+					position = "14.0318 -464.149 97.849";
 					rotation = "0 0 1 194.988";
 					scale = "1 1 1";
 					interiorFile = "brock8.dif";
@@ -163,7 +163,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-104.141 -458.014 61.8443";
+					position = "-104.141 -448.014 61.8443";
 					rotation = "-0.029988 -0.0223645 0.9993 106.609";
 					scale = "1 1 1";
 					interiorFile = "brockc.dif";
@@ -172,7 +172,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-31.6681 -420.183 128.872";
+					position = "-31.6681 -410.184 128.872";
 					rotation = "0.25075 0.25055 0.935066 93.79";
 					scale = "1 1.1 0.25";
 					interiorFile = "bwall1.dif";
@@ -181,7 +181,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new StaticShape() {
-					position = "16.1578 -379.823 130.572";
+					position = "16.1578 -369.823 130.572";
 					rotation = "0 0 1 67.5";
 					scale = "2.5 2.5 2.5";
 					nameTag = "Base";
@@ -189,12 +189,12 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					team = "1";
 					Target = "-1";
-					flag = "4888";
+					team = "1";
+					flag = "9215";
 				};
 				new InteriorInstance() {
-					position = "25.7058 -454.16 103.069";
+					position = "25.7058 -444.16 105.469";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					interiorFile = "brock6.dif";
@@ -203,7 +203,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "9.32582 -443.911 92.353";
+					position = "9.32582 -433.911 92.353";
 					rotation = "1 0 0 0";
 					scale = "1 1.2 1";
 					interiorFile = "bwall1.dif";
@@ -212,7 +212,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-47.5421 -425.132 88.953";
+					position = "-47.5421 -415.132 88.953";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					interiorFile = "bwall1.dif";
@@ -221,7 +221,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "28.7678 -446.124 95.776";
+					position = "28.7678 -436.124 95.776";
 					rotation = "-0.166342 0.220984 -0.960987 67.7596";
 					scale = "1 1 1";
 					interiorFile = "brock8.dif";
@@ -230,8 +230,8 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "25.4328 -350.029 105.341";
-					rotation = "0 0 1 41.2529";
+					position = "24.6262 -340.024 107.254";
+					rotation = "0.0348426 0.0925675 0.995097 41.439";
 					scale = "1 1 1";
 					interiorFile = "brockc.dif";
 					showTerrainInside = "0";
@@ -239,16 +239,16 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new TSStatic() {
-					position = "-0.584853 -396.796 122.345";
-					rotation = "0 0 1 88.8085";
+					position = "-1.15203 -386.113 126.155";
+					rotation = "-0.113997 -0.114088 0.986909 90.7094";
 					scale = "1 1 1";
 					shapeName = "stackable3l.dts";
 
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-54.4241 -390.832 114.96";
-					rotation = "1 0 0 0";
+					position = "-53.6252 -376.287 116.173";
+					rotation = "-0.266354 0.266353 0.926343 25.3245";
 					scale = "1 1 1";
 					interiorFile = "brock8.dif";
 					showTerrainInside = "0";
@@ -256,7 +256,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "24.3328 -378.377 150.172";
+					position = "24.3328 -368.378 150.172";
 					rotation = "0 0 1 90";
 					scale = "0.4 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -265,7 +265,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "24.3328 -381.377 129.772";
+					position = "24.3328 -371.378 129.772";
 					rotation = "0 0 1 90";
 					scale = "0.65 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -274,7 +274,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-15.7572 -402.147 129.772";
+					position = "-15.7572 -392.147 129.772";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -283,7 +283,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "4.5628 -347.245 117.872";
+					position = "4.5628 -337.245 117.872";
 					rotation = "-1 0 0 30";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -292,7 +292,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "28.1728 -347.245 117.872";
+					position = "28.1728 -337.245 117.872";
 					rotation = "-1 0 0 30";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -301,7 +301,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "28.1728 -400.797 135.372";
+					position = "28.1728 -390.797 135.372";
 					rotation = "1 0 0 30";
 					scale = "1 1 1";
 					interiorFile = "bwall4.dif";
@@ -310,7 +310,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "16.3328 -361.597 117.802";
+					position = "16.3328 -351.597 117.802";
 					rotation = "0 0 1 90";
 					scale = "1 1.1 1";
 					interiorFile = "bwall1.dif";
@@ -319,7 +319,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "4.54278 -379.547 117.822";
+					position = "4.54278 -369.547 117.822";
 					rotation = "1 0 0 0";
 					scale = "2 1 1";
 					interiorFile = "bwall3.dif";
@@ -328,7 +328,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-43.8172 -410.147 129.762";
+					position = "-43.8172 -400.147 129.762";
 					rotation = "1 0 0 0";
 					scale = "1.98 0.5 0.25";
 					interiorFile = "bwall1.dif";
@@ -337,7 +337,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-7.66621 -401.527 117.822";
+					position = "-7.66621 -391.527 117.822";
 					rotation = "0 0 1 90";
 					scale = "1 1.1 1";
 					interiorFile = "bwall1.dif";
@@ -346,7 +346,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-31.6801 -386.083 105.208";
+					position = "-31.6801 -376.083 105.208";
 					rotation = "-0.25075 0.25055 -0.935066 93.7983";
 					scale = "1 1.1 2";
 					interiorFile = "bwall1.dif";
@@ -355,7 +355,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "28.1928 -379.547 117.822";
+					position = "28.1928 -369.547 117.822";
 					rotation = "1 0 0 0";
 					scale = "2 1 1";
 					interiorFile = "bwall3.dif";
@@ -364,7 +364,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "31.9427 -381.297 99.322";
+					position = "31.9427 -371.297 99.322";
 					rotation = "1 0 0 0";
 					scale = "1 1 1.25";
 					interiorFile = "bwall3.dif";
@@ -373,7 +373,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-43.8572 -383.797 99.372";
+					position = "-43.8572 -373.797 99.372";
 					rotation = "-1 0 0 30";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -382,7 +382,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-19.6572 -383.797 99.372";
+					position = "-19.6572 -373.797 99.372";
 					rotation = "-1 0 0 30";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -391,7 +391,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "4.54278 -399.547 117.372";
+					position = "4.54278 -389.547 117.372";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					interiorFile = "bwall4.dif";
@@ -400,7 +400,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "4.5628 -400.797 135.372";
+					position = "4.5628 -390.797 135.372";
 					rotation = "1 0 0 30";
 					scale = "1 1 1";
 					interiorFile = "bwall4.dif";
@@ -409,7 +409,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "4.54278 -359.547 117.372";
+					position = "4.54278 -349.547 117.372";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					interiorFile = "bwall4.dif";
@@ -418,7 +418,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "28.1928 -359.547 117.372";
+					position = "28.1928 -349.547 117.372";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					interiorFile = "bwall4.dif";
@@ -427,7 +427,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "28.1928 -399.547 117.372";
+					position = "28.1928 -389.547 117.372";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					interiorFile = "bwall4.dif";
@@ -436,7 +436,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "31.4227 -411.297 117.822";
+					position = "31.4227 -401.297 117.822";
 					rotation = "1 0 0 0";
 					scale = "1 1.1 1";
 					interiorFile = "bwall1.dif";
@@ -445,7 +445,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-7.5572 -400.15 100.872";
+					position = "-7.5572 -390.15 100.872";
 					rotation = "0 0 1 90";
 					scale = "1 1 1";
 					interiorFile = "bwall3.dif";
@@ -454,7 +454,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-48.0572 -413.297 99.322";
+					position = "-48.0572 -403.297 99.322";
 					rotation = "1 0 0 0";
 					scale = "1 1 1.25";
 					interiorFile = "bwall3.dif";
@@ -463,7 +463,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-23.5572 -413.797 100.872";
+					position = "-23.5572 -403.797 100.872";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					interiorFile = "bwall3.dif";
@@ -472,7 +472,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "8.44282 -413.797 100.872";
+					position = "8.44282 -403.797 100.872";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					interiorFile = "bwall3.dif";
@@ -481,7 +481,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "31.9427 -413.297 99.322";
+					position = "31.9427 -403.297 99.322";
 					rotation = "1 0 0 0";
 					scale = "1 1 1.25";
 					interiorFile = "bwall3.dif";
@@ -490,7 +490,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "16.3328 -438.272 98.175";
+					position = "16.3328 -428.272 98.175";
 					rotation = "0.25075 0.25055 0.935066 93.7983";
 					scale = "1 1.1 2.5";
 					interiorFile = "bwall1.dif";
@@ -499,7 +499,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-31.7571 -379.597 116.822";
+					position = "-31.7571 -369.597 116.822";
 					rotation = "0 0 1 90";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -508,7 +508,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-7.5572 -396.797 104.172";
+					position = "-7.5572 -386.797 104.172";
 					rotation = "0 0 1 90";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -517,7 +517,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-15.7572 -411.547 116.822";
+					position = "-15.7572 -401.547 116.822";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -526,7 +526,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "32.2427 -395.597 116.822";
+					position = "32.2427 -385.597 116.822";
 					rotation = "0 0 1 90";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -535,7 +535,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "16.2428 -379.597 116.822";
+					position = "16.2428 -369.597 116.822";
 					rotation = "0 0 1 90";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -544,7 +544,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "0.242798 -371.547 116.822";
+					position = "0.242797 -361.547 116.822";
 					rotation = "0 0 1 90";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -553,7 +553,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-15.7572 -379.597 116.822";
+					position = "-15.7572 -369.597 116.822";
 					rotation = "0 0 1 90";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -562,7 +562,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "8.44282 -396.797 104.172";
+					position = "8.44282 -386.797 104.172";
 					rotation = "0 0 1 90";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -571,7 +571,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-31.6671 -438.663 97.507";
+					position = "-31.6671 -428.663 97.507";
 					rotation = "0.25075 0.25055 0.935066 93.7983";
 					scale = "1 1.1 1.5";
 					interiorFile = "bwall1.dif";
@@ -580,7 +580,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-7.66621 -427.183 117.606";
+					position = "-7.66621 -417.184 117.606";
 					rotation = "0.25075 0.25055 0.935066 93.7983";
 					scale = "1 1.1 1.1";
 					interiorFile = "bwall1.dif";
@@ -589,7 +589,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-19.6572 -436.797 99.372";
+					position = "-19.6572 -426.797 99.372";
 					rotation = "1 0 0 30";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -598,7 +598,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-7.5572 -432.797 89.272";
+					position = "-7.5572 -422.797 89.272";
 					rotation = "0 0 1 90";
 					scale = "2 1 1";
 					interiorFile = "bwall3.dif";
@@ -607,7 +607,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-43.8572 -436.797 99.372";
+					position = "-43.8572 -426.797 99.372";
 					rotation = "1 0 0 30";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -616,7 +616,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "28.1928 -436.797 99.372";
+					position = "28.1928 -426.797 99.372";
 					rotation = "1 0 0 30";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -625,7 +625,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "4.54278 -436.797 99.372";
+					position = "4.54278 -426.797 99.372";
 					rotation = "1 0 0 30";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -634,7 +634,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-33.5571 -453.797 99.372";
+					position = "-33.5571 -443.797 99.372";
 					rotation = "0 0 -1 90";
 					scale = "1 1 1";
 					interiorFile = "bvpad.dif";
@@ -643,7 +643,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new InteriorInstance() {
-					position = "-62.3621 -467.797 82.872";
+					position = "-62.3621 -457.797 82.872";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					interiorFile = "bwall4.dif";
@@ -652,7 +652,7 @@ new SimGroup(MissionGroup) {
 					team = "1";
 				};
 				new StaticShape() {
-					position = "-23.5572 -453.797 98.872";
+					position = "-23.5572 -443.797 98.872";
 					rotation = "0 0 1 90";
 					scale = "1 1 1";
 					nameTag = "Base";
@@ -660,29 +660,29 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					team = "1";
-					station = "5082";
-					inUse = "Down";
 					Target = "33";
-					ready = "1";
-				};
-				new StaticShape() {
-					position = "27.1908 -405.679 117.872";
-					rotation = "1 0 0 0";
-					scale = "1 1 1";
-					nameTag = "Inventory";
-					dataBlock = "StationInventory";
-					lockCount = "0";
-					homingCount = "0";
-
-					Trigger = "4865";
 					team = "1";
 					inUse = "Down";
+					ready = "1";
+					station = "9407";
+				};
+				new StaticShape() {
+					position = "27.1908 -395.679 117.872";
+					rotation = "1 0 0 0";
+					scale = "1 1 1";
+					nameTag = "Inventory";
+					dataBlock = "StationInventory";
+					lockCount = "0";
+					homingCount = "0";
+
 					Target = "34";
+					Trigger = "9194";
+					team = "1";
 					notReady = "1";
+					inUse = "Down";
 				};
 				new StaticShape() {
-					position = "22.0358 -399.588 117.872";
+					position = "22.0358 -389.589 117.872";
 					rotation = "0 0 1 90";
 					scale = "1 1 1";
 					nameTag = "Inventory";
@@ -690,12 +690,12 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					Trigger = "4867";
-					team = "1";
 					Target = "35";
+					Trigger = "9196";
+					team = "1";
 				};
 				new StaticShape() {
-					position = "22.0358 -383.633 117.872";
+					position = "22.0358 -373.633 117.872";
 					rotation = "0 0 1 90";
 					scale = "1 1 1";
 					nameTag = "Inventory";
@@ -703,12 +703,12 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					Trigger = "4869";
-					team = "1";
 					Target = "36";
+					Trigger = "9198";
+					team = "1";
 				};
 				new StaticShape() {
-					position = "22.0358 -365.888 117.872";
+					position = "22.0358 -355.888 117.872";
 					rotation = "0 0 1 90";
 					scale = "1 1 1";
 					nameTag = "Inventory";
@@ -716,12 +716,12 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					Trigger = "4871";
-					team = "1";
 					Target = "37";
+					Trigger = "9200";
+					team = "1";
 				};
 				new StaticShape() {
-					position = "4.08081 -404.553 105.372";
+					position = "4.08081 -394.553 105.372";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					nameTag = "Inventory";
@@ -729,12 +729,12 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					Trigger = "4873";
-					team = "1";
 					Target = "38";
+					Trigger = "9202";
+					team = "1";
 				};
 				new StaticShape() {
-					position = "-19.0972 -404.515 105.372";
+					position = "-19.0972 -394.516 105.372";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					nameTag = "Inventory";
@@ -742,12 +742,12 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					Trigger = "4875";
-					team = "1";
 					Target = "39";
+					Trigger = "9204";
+					team = "1";
 				};
 				new Item() {
-					position = "16.1868 -378.411 152.322";
+					position = "16.1868 -368.411 152.322";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					dataBlock = "RepairPack";
@@ -757,11 +757,11 @@ new SimGroup(MissionGroup) {
 					static = "1";
 					rotate = "0";
 
-					team = "1";
 					Target = "-1";
+					team = "1";
 				};
 				new Turret() {
-					position = "24.9998 -414.045 134.479";
+					position = "24.9998 -404.046 134.479";
 					rotation = "1 0 0 30";
 					scale = "1 1 1";
 					nameTag = "Base";
@@ -770,11 +770,11 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 					initialBarrel = "PlasmaBarrelLarge";
 
-					team = "1";
 					Target = "40";
+					team = "1";
 				};
 				new Turret() {
-					position = "-61.5571 -467.947 103.772";
+					position = "-61.5571 -457.947 103.772";
 					rotation = "0 0 -1 90";
 					scale = "1 1 1";
 					nameTag = "Base";
@@ -783,11 +783,11 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 					initialBarrel = "PlasmaBarrelLarge";
 
-					team = "1";
 					Target = "41";
+					team = "1";
 				};
 				new Turret() {
-					position = "-7.5572 -420.297 116.872";
+					position = "-7.5572 -410.297 116.872";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					nameTag = "Sentry";
@@ -796,11 +796,11 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 					initialBarrel = "SentryTurretBarrel";
 
-					team = "1";
 					Target = "42";
+					team = "1";
 				};
 				new ForceFieldBare(ff2) {
-					position = "-41.0672 -425.892 117.924";
+					position = "-41.0672 -415.892 117.924";
 					rotation = "1 0 0 30";
 					scale = "18 1 15";
 					nameTag = "Force Field";
@@ -808,13 +808,13 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					pz = "4882";
-					team = "1";
-					originalscale = "18 1 15";
 					Target = "43";
+					team = "1";
+					pz = "9210";
+					originalscale = "18 1 15";
 				};
 				new ForceFieldBare(ff1) {
-					position = "-46.6322 -422.182 119.122";
+					position = "-46.6322 -412.182 119.122";
 					rotation = "1 0 0 0";
 					scale = "1 23 12";
 					nameTag = "Force Field";
@@ -822,13 +822,13 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					pz = "4886";
-					team = "1";
-					originalscale = "1 23 12";
 					Target = "44";
+					team = "1";
+					pz = "9213";
+					originalscale = "1 23 12";
 				};
 				new StaticShape() {
-					position = "-31.8911 -413.599 117.579";
+					position = "-31.8911 -403.599 117.579";
 					rotation = "0 0 1 180";
 					scale = "1 1 1";
 					nameTag = "Base";
@@ -836,11 +836,11 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					team = "1";
 					Target = "45";
+					team = "1";
 				};
 				new Item() {
-					position = "16.1085 -379.98 132.069";
+					position = "16.1085 -369.98 132.069";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					nameTag = "Flag";
@@ -851,14 +851,14 @@ new SimGroup(MissionGroup) {
 					static = "1";
 					rotate = "1";
 
-					team = "1";
-					WayPoint = "5068";
-					Trigger = "5069";
 					Target = "46";
-					originalPosition = "16.1085 -379.98 132.069 1 0 0 0";
+					team = "1";
+					WayPoint = "9393";
+					Trigger = "9394";
 					isHome = "1";
+					originalPosition = "16.1085 -379.98 132.069 1 0 0 0";
+					stand = "9140";
 					className = "FlagObj";
-					stand = "4811";
 				};
 			};
 		};
@@ -875,7 +875,7 @@ new SimGroup(MissionGroup) {
 				powerCount = "1";
 
 				new SpawnSphere() {
-					position = "-75.9397 325.827 110.474";
+					position = "-75.9397 326.427 110.474";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					dataBlock = "SpawnSphereMarker";
@@ -887,7 +887,7 @@ new SimGroup(MissionGroup) {
 					outdoorWeight = "100";
 				};
 				new SpawnSphere() {
-					position = "29.7328 335.603 129.45";
+					position = "29.7328 336.203 129.45";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					dataBlock = "SpawnSphereMarker";
@@ -899,7 +899,7 @@ new SimGroup(MissionGroup) {
 					outdoorWeight = "100";
 				};
 				new InteriorInstance() {
-					position = "-23.3932 454.388 98.6488";
+					position = "-23.3932 454.988 98.6488";
 					rotation = "0 0 1 13.7508";
 					scale = "1 1 1";
 					interiorFile = "brock8.dif";
@@ -908,7 +908,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "95.1005 440.808 62.6441";
+					position = "95.1005 441.408 62.6441";
 					rotation = "0.0299725 -0.0392968 -0.998778 74.7342";
 					scale = "1 1 1";
 					interiorFile = "brockc.dif";
@@ -917,7 +917,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "23.4611 401.421 129.672";
+					position = "23.4611 402.021 129.672";
 					rotation = "-0.250681 0.245521 -0.936418 95.0487";
 					scale = "1 1.1 0.25";
 					interiorFile = "bwall1.dif";
@@ -926,7 +926,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new StaticShape() {
-					position = "-23.4821 360.038 131.372";
+					position = "-23.4821 360.638 131.372";
 					rotation = "0 0 -1 113.737";
 					scale = "2.5 2.5 2.5";
 					nameTag = "Base";
@@ -934,12 +934,12 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					team = "2";
 					Target = "-1";
-					flag = "4974";
+					team = "2";
+					flag = "9299";
 				};
 				new InteriorInstance() {
-					position = "-24.6353 434.368 103.869";
+					position = "-24.6353 434.968 103.869";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					interiorFile = "brock6.dif";
@@ -948,7 +948,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-18.0355 424.258 93.1528";
+					position = "-18.0355 424.858 93.1528";
 					rotation = "0 0 1 178.763";
 					scale = "1 1.2 1";
 					interiorFile = "bwall1.dif";
@@ -957,7 +957,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "39.2245 406.712 89.7528";
+					position = "39.2245 407.312 89.7528";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					interiorFile = "bwall1.dif";
@@ -966,7 +966,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-37.5207 426.051 96.5758";
+					position = "-37.5207 426.651 96.5758";
 					rotation = "0.145683 0.112144 0.982955 114";
 					scale = "1 1 1";
 					interiorFile = "brock8.dif";
@@ -975,8 +975,8 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-32.1118 330.051 107.141";
-					rotation = "0 0 1 220.016";
+					position = "-32.4718 330.222 107.807";
+					rotation = "0.00728189 0.0199981 0.999774 220.008";
 					scale = "1 1 1";
 					interiorFile = "brockc.dif";
 					showTerrainInside = "0";
@@ -984,15 +984,15 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new TSStatic() {
-					position = "-7.2833 377.496 125.545";
-					rotation = "0 0 -1 92.4287";
+					position = "-6.75826 377.201 126.722";
+					rotation = "0.0619376 -0.154545 -0.986042 92.6001";
 					scale = "1 1 1";
 					shapeName = "stackable3l.dts";
 
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "46.8456 372.568 116.76";
+					position = "46.8456 373.168 116.76";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					interiorFile = "brock8.dif";
@@ -1001,7 +1001,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-31.6241 358.416 150.972";
+					position = "-31.6241 359.016 150.972";
 					rotation = "0 0 -1 91.2372";
 					scale = "0.4 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -1010,7 +1010,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-31.6888 361.415 130.572";
+					position = "-31.6888 362.015 130.572";
 					rotation = "0 0 -1 91.2372";
 					scale = "0.65 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -1019,7 +1019,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "7.9433 383.046 130.572";
+					position = "7.9433 383.646 130.572";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -1028,7 +1028,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-11.1865 327.718 118.672";
+					position = "-11.1865 328.318 118.672";
 					rotation = "-0.00279455 0.258819 0.965922 178.805";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -1037,7 +1037,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-34.791 327.208 118.672";
+					position = "-34.791 327.808 118.672";
 					rotation = "-0.00279455 0.258819 0.965922 178.805";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -1046,7 +1046,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-35.9472 380.748 136.172";
+					position = "-35.9472 381.348 136.172";
 					rotation = "0.00279455 -0.258819 0.965922 178.805";
 					scale = "1 1 1";
 					interiorFile = "bwall4.dif";
@@ -1055,7 +1055,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-23.2636 341.813 118.602";
+					position = "-23.2636 342.413 118.602";
 					rotation = "0 0 -1 91.2372";
 					scale = "1 1.1 1";
 					interiorFile = "bwall1.dif";
@@ -1064,7 +1064,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-11.8639 360.013 118.622";
+					position = "-11.8639 360.613 118.622";
 					rotation = "0 0 1 178.763";
 					scale = "2 1 1";
 					interiorFile = "bwall3.dif";
@@ -1073,7 +1073,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "35.824 391.65 130.562";
+					position = "35.824 392.25 130.562";
 					rotation = "0 0 1 178.763";
 					scale = "1.98 0.5 0.25";
 					interiorFile = "bwall1.dif";
@@ -1082,7 +1082,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-0.132529 382.251 118.622";
+					position = "-0.13253 382.851 118.622";
 					rotation = "0 0 -1 91.2372";
 					scale = "1 1.1 1";
 					interiorFile = "bwall1.dif";
@@ -1091,7 +1091,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "24.2094 367.329 106.008";
+					position = "24.2094 367.929 106.008";
 					rotation = "0.250027 0.255688 0.933868 92.7275";
 					scale = "1 1.1 2";
 					interiorFile = "bwall1.dif";
@@ -1100,7 +1100,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-35.5085 359.502 118.622";
+					position = "-35.5085 360.102 118.622";
 					rotation = "0 0 1 178.763";
 					scale = "2 1 1";
 					interiorFile = "bwall3.dif";
@@ -1109,7 +1109,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-39.2952 361.171 100.122";
+					position = "-39.2952 361.771 100.122";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1.25";
 					interiorFile = "bwall3.dif";
@@ -1118,7 +1118,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "36.433 365.307 100.172";
+					position = "36.433 365.907 100.172";
 					rotation = "-0.00279455 0.258819 0.965922 178.805";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -1127,7 +1127,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "12.2386 364.784 100.172";
+					position = "12.2386 365.384 100.172";
 					rotation = "-0.00279455 0.258819 0.965922 178.805";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -1136,7 +1136,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-12.2957 380.008 118.172";
+					position = "-12.2957 380.608 118.172";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					interiorFile = "bwall4.dif";
@@ -1145,7 +1145,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-12.3429 381.258 136.172";
+					position = "-12.3429 381.858 136.172";
 					rotation = "0.00279455 -0.258819 0.965922 178.805";
 					scale = "1 1 1";
 					interiorFile = "bwall4.dif";
@@ -1154,7 +1154,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-11.4321 340.017 118.172";
+					position = "-11.4321 340.617 118.172";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					interiorFile = "bwall4.dif";
@@ -1163,7 +1163,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-35.0766 339.507 118.172";
+					position = "-35.0766 340.107 118.172";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					interiorFile = "bwall4.dif";
@@ -1172,7 +1172,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-35.9402 379.498 118.172";
+					position = "-35.9402 380.098 118.172";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					interiorFile = "bwall4.dif";
@@ -1181,7 +1181,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-39.4231 391.175 118.622";
+					position = "-39.4231 391.775 118.622";
 					rotation = "0 0 1 178.763";
 					scale = "1 1.1 1";
 					interiorFile = "bwall1.dif";
@@ -1190,7 +1190,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-0.211609 380.872 101.672";
+					position = "-0.21161 381.472 101.672";
 					rotation = "0 0 -1 91.2372";
 					scale = "1 1 1";
 					interiorFile = "bwall3.dif";
@@ -1199,7 +1199,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "39.9951 394.891 100.122";
+					position = "39.9951 395.491 100.122";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1.25";
 					interiorFile = "bwall3.dif";
@@ -1208,7 +1208,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "15.4899 394.862 101.672";
+					position = "15.4899 395.462 101.672";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					interiorFile = "bwall3.dif";
@@ -1217,7 +1217,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-16.5026 394.171 101.672";
+					position = "-16.5026 394.771 101.672";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					interiorFile = "bwall3.dif";
@@ -1226,7 +1226,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-39.9862 393.163 100.122";
+					position = "-39.9862 393.763 100.122";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1.25";
 					interiorFile = "bwall3.dif";
@@ -1235,7 +1235,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-24.919 418.47 98.9748";
+					position = "-24.919 419.07 98.9748";
 					rotation = "-0.250714 0.245553 -0.936401 95.0414";
 					scale = "1 1.1 2.5";
 					interiorFile = "bwall1.dif";
@@ -1244,7 +1244,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "24.4263 360.847 117.622";
+					position = "24.4263 361.447 117.622";
 					rotation = "0 0 -1 91.2372";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -1253,7 +1253,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-0.139339 377.52 104.972";
+					position = "-0.13934 378.12 104.972";
 					rotation = "0 0 -1 91.2372";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -1262,7 +1262,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "7.7403 392.444 117.622";
+					position = "7.7403 393.044 117.622";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -1271,7 +1271,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-39.904 375.461 117.622";
+					position = "-39.904 376.061 117.622";
 					rotation = "0 0 -1 91.2372";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -1280,7 +1280,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-23.5623 359.81 117.622";
+					position = "-23.5623 360.41 117.622";
 					rotation = "0 0 -1 91.2372";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -1289,7 +1289,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-7.39225 352.107 117.622";
+					position = "-7.39225 352.707 117.622";
 					rotation = "0 0 -1 91.2372";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -1298,7 +1298,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "8.4303 360.501 117.622";
+					position = "8.4303 361.101 117.622";
 					rotation = "0 0 -1 91.2372";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -1307,7 +1307,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-16.1355 377.175 104.972";
+					position = "-16.1355 377.775 104.972";
 					rotation = "0 0 -1 91.2372";
 					scale = "1 1 1";
 					interiorFile = "dmisc_nefbridge.dif";
@@ -1316,7 +1316,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "23.0611 419.897 98.3068";
+					position = "23.0611 420.497 98.3068";
 					rotation = "-0.250714 0.245553 -0.936401 95.0414";
 					scale = "1 1.1 1.5";
 					interiorFile = "bwall1.dif";
@@ -1325,7 +1325,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-0.686399 407.901 118.406";
+					position = "-0.6864 408.501 118.406";
 					rotation = "-0.250714 0.245553 -0.936401 95.0414";
 					scale = "1 1.1 1.1";
 					interiorFile = "bwall1.dif";
@@ -1334,7 +1334,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "11.0943 417.772 100.172";
+					position = "11.0943 418.372 100.172";
 					rotation = "0.00279455 -0.258819 0.965922 178.805";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -1343,7 +1343,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-0.916539 413.512 90.0718";
+					position = "-0.91654 414.112 90.0718";
 					rotation = "0 0 -1 91.2372";
 					scale = "2 1 1";
 					interiorFile = "bwall3.dif";
@@ -1352,7 +1352,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "35.2887 418.295 100.172";
+					position = "35.2887 418.895 100.172";
 					rotation = "0.00279455 -0.258819 0.965922 178.805";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -1361,7 +1361,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-36.7445 416.739 100.172";
+					position = "-36.7445 417.339 100.172";
 					rotation = "0.00279455 -0.258819 0.965922 178.805";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -1370,7 +1370,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "-13.1 417.249 100.172";
+					position = "-13.1 417.849 100.172";
 					rotation = "0.00279455 -0.258819 0.965922 178.805";
 					scale = "1 1 2";
 					interiorFile = "bwall4.dif";
@@ -1379,7 +1379,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "24.6239 435.068 100.172";
+					position = "24.6239 435.668 100.172";
 					rotation = "0 0 1 88.7628";
 					scale = "1 1 1";
 					interiorFile = "bvpad.dif";
@@ -1388,7 +1388,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new InteriorInstance() {
-					position = "53.12 449.686 83.6718";
+					position = "53.12 450.286 83.6718";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					interiorFile = "bwall4.dif";
@@ -1397,7 +1397,7 @@ new SimGroup(MissionGroup) {
 					team = "2";
 				};
 				new StaticShape() {
-					position = "14.6263 434.852 99.6719";
+					position = "14.6263 435.452 99.6719";
 					rotation = "0 0 -1 91.2372";
 					scale = "1 1 1";
 					nameTag = "Base";
@@ -1405,13 +1405,13 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					team = "2";
-					station = "5085";
 					Target = "47";
+					team = "2";
 					ready = "1";
+					station = "9410";
 				};
 				new StaticShape() {
-					position = "-35.0708 385.65 118.672";
+					position = "-35.0708 386.25 118.672";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					nameTag = "Inventory";
@@ -1419,12 +1419,12 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					Trigger = "4952";
-					team = "2";
 					Target = "48";
+					Trigger = "9279";
+					team = "2";
 				};
 				new StaticShape() {
-					position = "-29.7856 379.671 118.672";
+					position = "-29.7856 380.271 118.672";
 					rotation = "0 0 -1 91.2372";
 					scale = "1 1 1";
 					nameTag = "Inventory";
@@ -1432,12 +1432,12 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					Trigger = "4954";
-					team = "2";
 					Target = "49";
+					Trigger = "9281";
+					team = "2";
 				};
 				new StaticShape() {
-					position = "-29.4411 363.72 118.672";
+					position = "-29.4411 364.32 118.672";
 					rotation = "0 0 -1 91.2372";
 					scale = "1 1 1";
 					nameTag = "Inventory";
@@ -1445,12 +1445,12 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					Trigger = "4956";
-					team = "2";
 					Target = "50";
+					Trigger = "9283";
+					team = "2";
 				};
 				new StaticShape() {
-					position = "-29.058 345.979 118.672";
+					position = "-29.058 346.579 118.672";
 					rotation = "0 0 -1 91.2372";
 					scale = "1 1 1";
 					nameTag = "Inventory";
@@ -1458,12 +1458,12 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					Trigger = "4958";
-					team = "2";
 					Target = "51";
+					Trigger = "9285";
+					team = "2";
 				};
 				new StaticShape() {
-					position = "-11.9419 385.023 106.172";
+					position = "-11.9419 385.623 106.172";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					nameTag = "Inventory";
@@ -1471,12 +1471,12 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					Trigger = "4960";
-					team = "2";
 					Target = "52";
+					Trigger = "9287";
+					team = "2";
 				};
 				new StaticShape() {
-					position = "11.2314 385.486 106.172";
+					position = "11.2314 386.086 106.172";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					nameTag = "Inventory";
@@ -1484,12 +1484,12 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					Trigger = "4962";
-					team = "2";
 					Target = "53";
+					Trigger = "9289";
+					team = "2";
 				};
 				new Item() {
-					position = "-23.4806 358.626 153.122";
+					position = "-23.4806 359.226 153.122";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					dataBlock = "RepairPack";
@@ -1499,11 +1499,11 @@ new SimGroup(MissionGroup) {
 					static = "1";
 					rotate = "0";
 
-					team = "2";
 					Target = "-1";
+					team = "2";
 				};
 				new Turret() {
-					position = "-33.061 394.061 135.279";
+					position = "-33.061 394.661 135.279";
 					rotation = "0.00279455 -0.258819 0.965922 178.805";
 					scale = "1 1 1";
 					nameTag = "Base";
@@ -1512,11 +1512,11 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 					initialBarrel = "PlasmaBarrelLarge";
 
-					team = "2";
 					Target = "54";
+					team = "2";
 				};
 				new Turret() {
-					position = "52.312 449.819 104.572";
+					position = "52.312 450.419 104.572";
 					rotation = "0 0 1 88.7628";
 					scale = "1 1 1";
 					nameTag = "Base";
@@ -1525,11 +1525,11 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 					initialBarrel = "PlasmaBarrelLarge";
 
-					team = "2";
 					Target = "55";
+					team = "2";
 				};
 				new Turret() {
-					position = "-0.646639 401.015 117.672";
+					position = "-0.64664 401.615 117.672";
 					rotation = "0 0 1 178.763";
 					scale = "1 1 1";
 					nameTag = "Sentry";
@@ -1538,11 +1538,11 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 					initialBarrel = "SentryTurretBarrel";
 
-					team = "2";
 					Target = "56";
+					team = "2";
 				};
 				new ForceFieldBare(ff2) {
-					position = "32.7349 407.332 118.724";
+					position = "32.7349 407.932 118.724";
 					rotation = "0.00279455 -0.258819 0.965922 178.805";
 					scale = "18 1 15";
 					nameTag = "Force Field";
@@ -1550,13 +1550,13 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					pz = "4969";
-					team = "2";
-					originalscale = "18 1 15";
 					Target = "57";
+					team = "2";
+					pz = "9295";
+					originalscale = "18 1 15";
 				};
 				new ForceFieldBare(ff1) {
-					position = "38.3786 403.743 119.922";
+					position = "38.3786 404.343 119.922";
 					rotation = "0 0 1 178.763";
 					scale = "1 23 12";
 					nameTag = "Force Field";
@@ -1564,13 +1564,13 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					pz = "4972";
-					team = "2";
-					originalscale = "1 23 12";
 					Target = "58";
+					team = "2";
+					pz = "9297";
+					originalscale = "1 23 12";
 				};
 				new StaticShape() {
-					position = "23.8262 394.844 118.379";
+					position = "23.8262 395.444 118.379";
 					rotation = "-0 0 -1 1.23731";
 					scale = "1 1 1";
 					nameTag = "Base";
@@ -1578,11 +1578,11 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 
-					team = "2";
 					Target = "59";
+					team = "2";
 				};
 				new Item() {
-					position = "-23.4567 360.244 132.869";
+					position = "-23.4567 360.844 132.869";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					nameTag = "Flag";
@@ -1593,14 +1593,14 @@ new SimGroup(MissionGroup) {
 					static = "1";
 					rotate = "1";
 
-					team = "2";
-					WayPoint = "5070";
-					Trigger = "5071";
 					Target = "60";
-					originalPosition = "-23.4567 360.244 132.869 1 0 0 0";
+					team = "2";
+					WayPoint = "9395";
+					Trigger = "9396";
 					isHome = "1";
+					originalPosition = "-23.4567 360.244 132.869 1 0 0 0";
+					stand = "9225";
 					className = "FlagObj";
-					stand = "4898";
 				};
 			};
 		};
@@ -1619,8 +1619,8 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				team = "0";
 				Target = "-1";
+				team = "0";
 			};
 			new Item() {
 				position = "-317.319 -2.98888 119.957";
@@ -1633,8 +1633,8 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				team = "0";
 				Target = "-1";
+				team = "0";
 			};
 			new Item() {
 				position = "-317.319 -12.9889 119.957";
@@ -1647,8 +1647,8 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				team = "0";
 				Target = "-1";
+				team = "0";
 			};
 			new InteriorInstance() {
 				position = "-346.407 -41.3928 86.934";
@@ -1832,8 +1832,8 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				team = "0";
 				Target = "-1";
+				team = "0";
 			};
 			new Item() {
 				position = "12.1578 -41.8756 134.846";
@@ -1846,8 +1846,8 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				team = "0";
 				Target = "-1";
+				team = "0";
 			};
 			new Item() {
 				position = "18.6579 -35.8757 134.846";
@@ -1860,8 +1860,8 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				team = "0";
 				Target = "-1";
+				team = "0";
 			};
 			new Item() {
 				position = "12.1578 -29.8757 134.846";
@@ -1874,8 +1874,8 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				team = "0";
 				Target = "-1";
+				team = "0";
 			};
 			new StaticShape() {
 				position = "12.2499 -35.8777 156.68";
@@ -1886,9 +1886,9 @@ new SimGroup(MissionGroup) {
 				lockCount = "0";
 				homingCount = "0";
 
-				team = "0";
-				Target = "-1";
 				holo = "0";
+				Target = "-1";
+				team = "0";
 			};
 			new InteriorInstance() {
 				position = "12.1578 -16.4256 132.346";
@@ -2297,7 +2297,7 @@ new SimGroup(MissionGroup) {
 			team = "0";
 		};
 		new Camera() {
-			position = "58.5924 323.045 163.81";
+			position = "58.5924 323.645 163.81";
 			rotation = "0.241618 0.112333 -0.963848 51.5015";
 			scale = "1 1 1";
 			dataBlock = "Observer";
