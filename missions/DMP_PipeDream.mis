@@ -7,7 +7,7 @@
 //--- MISSION QUOTE END ---
 
 //--- MISSION STRING BEGIN ---
-//[CTF]1200 points to win
+//[CTF]1000 points to win
 //Stations are self-powered.
 //Wash your hands!!
 //<color:008B8B>Map by Rooster128
@@ -17,10 +17,10 @@
 new SimGroup(MissionGroup) {
 
 	cdTrack = "4";
-	CTF_timeLimit = "25";
-	powerCount = "0";
+	CTF_scoreLimit = "10";
 	musicTrack = "lush";
-	CTF_scoreLimit = "12";
+	powerCount = "0";
+	CTF_timeLimit = "25";
 
 	new MissionArea(MissionArea) {
 		area = "-464 -456 992 768";
@@ -36,10 +36,10 @@ new SimGroup(MissionGroup) {
 		terrainFile = "Confusco.ter";
 		squareSize = "8";
 
-		position = "-1024 -1024 0";
-		hazeDistance = "250";
 		visibleDistance = "1200";
 		locked = "true";
+		hazeDistance = "250";
+		position = "-1024 -1024 0";
 	};
 	new Sun() {
 		position = "-1024 -1024 0";
@@ -65,20 +65,20 @@ new SimGroup(MissionGroup) {
 
 		powerCount = "0";
 	};
-	new NavigationGraph(NavGraph) {
+	new NavigationGraph(navGraph) {
 		conjoinAngleDev = "45";
 		cullDensity = "0.3";
 		customArea = "0 0 0 0";
 
-		position = "0 0 0 1";
-		coverage = "0";
-		rotation = "0 0 0 0";
 		XDimOverSize = "0";
+		locked = "true";
 		YDimOverSize = "0";
+		position = "0 0 0 1";
+		conjoinBowlDev = "20";
+		rotation = "0 0 0 0";
+		coverage = "0";
 		GraphFile = "Minotaur.nav";
 		scale = "1 1 1";
-		conjoinBowlDev = "20";
-		locked = "true";
 	};
 	new Sky(Sky) {
 		position = "-1024 -1024 0";
@@ -111,8 +111,8 @@ new SimGroup(MissionGroup) {
 		high_fogVolume2 = "-1 1.12775e-06 8.30861e+10";
 		high_fogVolume3 = "-1 -9.62437e-27 1.47753e+25";
 
-		cloudSpeed0 = "0.002000 0.003000";
 		locked = "true";
+		cloudSpeed0 = "0.002000 0.003000";
 	};
 	new WaterBlock() {
 		position = "-216 -88 270.845";
@@ -120,20 +120,20 @@ new SimGroup(MissionGroup) {
 		scale = "32 32 118.294";
 		liquidType = "OceanWater";
 		density = "2000";
-		viscosity = "3";
+		viscosity = "5";
 		waveMagnitude = "1";
 		surfaceOpacity = "0.75";
 		envMapIntensity = "1";
 		removeWetEdges = "1";
 
-		textureSize = "32 32";
-		params2 = "0.39 0.39 0.2 0.133";
-		floodFill = "1";
-		seedPoints = "0 0 1 0 1 1 0 1";
 		extent = "100 100 10";
+		floodFill = "1";
 		params0 = "0.32 -0.67 0.066 0.5";
+		seedPoints = "0 0 1 0 1 1 0 1";
 		params1 = "0.63 -2.41 0.33 0.21";
 		params3 = "1.21 -0.61 0.13 -0.33";
+		textureSize = "32 32";
+		params2 = "0.39 0.39 0.2 0.133";
 	};
 	new SimGroup(environ) {
 
@@ -259,74 +259,12 @@ new SimGroup(MissionGroup) {
 			scale = "5.5 5.5 5.5";
 			shapeName = "stackable2m.dts";
 		};
-		new TSStatic() {
-			position = "212.362 37.5689 276.348";
-			rotation = "1 0 0 0";
-			scale = "5.5 5.5 5.5";
-			shapeName = "stackable2m.dts";
-		};
-		new TSStatic() {
-			position = "217.762 37.5689 276.348";
-			rotation = "1 0 0 0";
-			scale = "5.5 5.5 5.5";
-			shapeName = "stackable2m.dts";
-		};
-		new TSStatic() {
-			position = "223.162 37.5689 276.348";
-			rotation = "1 0 0 0";
-			scale = "5.5 5.5 5.5";
-			shapeName = "stackable2m.dts";
-		};
-		new AudioEmitter() {
-			position = "-194.243 -60.654 359.148";
-			rotation = "1 0 0 0";
-			scale = "1 1 1";
-			profile = "ScoutEngineSound";
-			description = "AudioDefaultLooping3d";
-			useProfileDescription = "0";
-			outsideAmbient = "1";
-			volume = "1";
-			isLooping = "1";
-			is3D = "1";
-			minDistance = "1";
-			maxDistance = "5";
-			coneInsideAngle = "360";
-			coneOutsideAngle = "360";
-			coneOutsideVolume = "1";
-			coneVector = "0 0 1";
-			loopCount = "-1";
-			minLoopGap = "0";
-			maxLoopGap = "0";
-			type = "EffectAudioType";
-		};
-		new AudioEmitter() {
-			position = "214.539 37.681 371.148";
-			rotation = "1 0 0 0";
-			scale = "1 1 1";
-			profile = "ScoutEngineSound";
-			description = "AudioDefaultLooping3d";
-			useProfileDescription = "1";
-			outsideAmbient = "1";
-			volume = "1";
-			isLooping = "1";
-			is3D = "1";
-			minDistance = "1";
-			maxDistance = "5";
-			coneInsideAngle = "360";
-			coneOutsideAngle = "360";
-			coneOutsideVolume = "0";
-			coneVector = "0 0 1";
-			loopCount = "-1";
-			minLoopGap = "0";
-			maxLoopGap = "0";
-			type = "EffectAudioType";
-		};
 	};
 	new SimGroup(teams) {
 
 		powerCount = "0";
 
-		new SimGroup(Team0) {
+		new SimGroup(team0) {
 
 			providesPower = "1";
 			powerCount = "1";
@@ -342,9 +280,9 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				team = "0";
 				Target = "-1";
 				ammoStore = "1";
+				team = "0";
 			};
 			new Item() {
 				position = "0.352201 0.669448 247.196";
@@ -357,9 +295,9 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				team = "0";
 				Target = "-1";
 				ammoStore = "1";
+				team = "0";
 			};
 			new Item() {
 				position = "0.352201 -25.1306 247.196";
@@ -372,9 +310,9 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				team = "0";
 				Target = "-1";
 				ammoStore = "1";
+				team = "0";
 			};
 			new Item() {
 				position = "18.3522 -25.1306 247.196";
@@ -387,12 +325,12 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				team = "0";
 				Target = "-1";
 				ammoStore = "1";
+				team = "0";
 			};
 			new Item() {
-				position = "-186.36 -12.1352 315.024";
+				position = "-236.5 -12.1352 315.024";
 				rotation = "0 0 -1 90";
 				scale = "1 1 1";
 				dataBlock = "RepairPack";
@@ -402,11 +340,11 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				team = "2";
 				Target = "-1";
+				team = "0";
 			};
 			new Item() {
-				position = "205.24 -12.1352 315.024";
+				position = "255.35 -12.1352 315.024";
 				rotation = "0 0 -1 90";
 				scale = "1 1 1";
 				dataBlock = "RepairPack";
@@ -416,8 +354,8 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				team = "1";
 				Target = "-1";
+				team = "0";
 			};
 			new ForceFieldBare() {
 				position = "5.26815 -16.4562 307.073";
@@ -428,10 +366,10 @@ new SimGroup(MissionGroup) {
 				lockCount = "0";
 				homingCount = "0";
 
-				team = "0";
-				pz = "5278";
-				originalscale = "8.51173 8.53883 1.13294";
 				Target = "33";
+				originalscale = "8.51173 8.53883 1.13294";
+				pz = "5988";
+				team = "0";
 			};
 			new Item() {
 				position = "9.4 -12.2 400";
@@ -444,8 +382,8 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "1";
 
-				team = "0";
 				Target = "-1";
+				team = "0";
 			};
 			new Item() {
 				position = "9.4 -12.2 350";
@@ -458,8 +396,8 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "1";
 
-				team = "0";
 				Target = "-1";
+				team = "0";
 			};
 			new Item() {
 				position = "9.4 -12.2 375";
@@ -472,24 +410,24 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "1";
 
-				team = "0";
 				Target = "-1";
+				team = "0";
 			};
 			new StaticShape() {
-				position = "9.24022 -12.3374 247.066";
+				position = "9.24022 -12.3374 247.076";
 				rotation = "1 0 0 0";
-				scale = "1 1 1";
+				scale = "1.5 1.5 1.5";
 				nameTag = "Base";
 				dataBlock = "CreativityPad";
 				lockCount = "0";
 				homingCount = "0";
 
-				jumpPower = "100";
+				lastDamagedByTeam = "1";
+				lastDamagedBy = "4137";
 				damageTimeMS = "1030591";
 				team = "0";
-				lastDamagedBy = "4137";
-				lastDamagedByTeam = "1";
 				minSpeed = "100";
+				jumpPower = "100";
 			};
 			new StaticShape() {
 				position = "-165.16 -12.3374 314.666";
@@ -500,9 +438,9 @@ new SimGroup(MissionGroup) {
 				lockCount = "0";
 				homingCount = "0";
 
-				jumpPower = "200";
 				team = "0";
 				minSpeed = "0";
+				jumpPower = "200";
 			};
 			new StaticShape() {
 				position = "183.84 -12.3374 314.666";
@@ -513,9 +451,173 @@ new SimGroup(MissionGroup) {
 				lockCount = "0";
 				homingCount = "0";
 
-				jumpPower = "200";
 				team = "0";
 				minSpeed = "0";
+				jumpPower = "200";
+			};
+			new StaticShape() {
+				position = "98.9796 -59.1241 280.588";
+				rotation = "1 0 0 0";
+				scale = "1 1 1";
+				nameTag = "Inventory";
+				dataBlock = "StationInventory";
+				lockCount = "0";
+				homingCount = "0";
+
+				Target = "34";
+				Trigger = "5997";
+				team = "0";
+			};
+			new StaticShape() {
+				position = "84.3796 -59.1241 280.588";
+				rotation = "1 0 0 0";
+				scale = "1 1 1";
+				nameTag = "Inventory";
+				dataBlock = "StationInventory";
+				lockCount = "0";
+				homingCount = "0";
+
+				Target = "35";
+				Trigger = "5999";
+				team = "0";
+			};
+			new StaticShape() {
+				position = "-80.0252 34.7503 280.728";
+				rotation = "0 0 1 179.909";
+				scale = "1 1 1";
+				nameTag = "Inventory";
+				dataBlock = "StationInventory";
+				lockCount = "0";
+				homingCount = "0";
+
+				Target = "36";
+				Trigger = "6001";
+				team = "0";
+			};
+			new StaticShape() {
+				position = "-65.6252 34.7732 280.728";
+				rotation = "0 0 1 179.909";
+				scale = "1 1 1";
+				nameTag = "Inventory";
+				dataBlock = "StationInventory";
+				lockCount = "0";
+				homingCount = "0";
+
+				Target = "37";
+				Trigger = "6003";
+				team = "0";
+			};
+			new Item() {
+				position = "-72.618 60.8366 280.641";
+				rotation = "1 0 0 0";
+				scale = "1 1 1";
+				dataBlock = "RepairPack";
+				lockCount = "0";
+				homingCount = "0";
+				collideable = "0";
+				static = "1";
+				rotate = "0";
+
+				Target = "-1";
+				team = "0";
+			};
+			new Item() {
+				position = "91.3265 -85.2871 280.635";
+				rotation = "0 0 1 180";
+				scale = "1 1 1";
+				dataBlock = "RepairPack";
+				lockCount = "0";
+				homingCount = "0";
+				collideable = "0";
+				static = "1";
+				rotate = "0";
+
+				Target = "-1";
+				team = "0";
+			};
+			new Item() {
+				position = "55.3923 -10.1754 280.622";
+				rotation = "1 0 0 0";
+				scale = "1 1 1";
+				dataBlock = "RepairPatch";
+				lockCount = "0";
+				homingCount = "0";
+				collideable = "0";
+				static = "1";
+				rotate = "0";
+
+				Target = "-1";
+				team = "0";
+			};
+			new Item() {
+				position = "-36.6377 -10.1754 280.642";
+				rotation = "1 0 0 0";
+				scale = "1 1 1";
+				dataBlock = "RepairPatch";
+				lockCount = "0";
+				homingCount = "0";
+				collideable = "0";
+				static = "1";
+				rotate = "0";
+
+				Target = "-1";
+				team = "0";
+			};
+			new Item() {
+				position = "9.73226 -64.1944 280.883";
+				rotation = "1 0 0 0";
+				scale = "1 1 1";
+				dataBlock = "RepairKit";
+				lockCount = "0";
+				homingCount = "0";
+				collideable = "0";
+				static = "1";
+				rotate = "0";
+
+				Target = "-1";
+				team = "0";
+			};
+			new Item() {
+				position = "9.01328 39.8043 280.876";
+				rotation = "1 0 0 0";
+				scale = "1 1 1";
+				dataBlock = "RepairKit";
+				lockCount = "0";
+				homingCount = "0";
+				collideable = "0";
+				static = "1";
+				rotate = "0";
+
+				Target = "-1";
+				team = "0";
+			};
+			new Item() {
+				position = "123.39 46.348 280.579";
+				rotation = "1 0 0 0";
+				scale = "1 1 1";
+				dataBlock = "RepairPatch";
+				lockCount = "0";
+				homingCount = "0";
+				collideable = "0";
+				static = "1";
+				rotate = "0";
+
+				Target = "-1";
+				team = "0";
+			};
+			new Item() {
+				position = "-104.285 -70.8256 280.614";
+				rotation = "1 0 0 0";
+				scale = "1 1 1";
+				dataBlock = "RepairPatch";
+				lockCount = "0";
+				homingCount = "0";
+				collideable = "0";
+				static = "1";
+				rotate = "0";
+
+				Target = "-1";
+				team = "0";
 			};
 		};
 		new SimGroup(team2) {
@@ -528,35 +630,33 @@ new SimGroup(MissionGroup) {
 				powerCount = "1";
 
 				new StaticShape() {
-					position = "-185.035 -37.7223 314.733";
-					rotation = "0 0 1 89.9544";
+					position = "-216.616 -29.584 314.587";
+					rotation = "0 0 1 180";
 					scale = "1 1 1";
 					nameTag = "Inventory";
 					dataBlock = "StationInventory";
 					lockCount = "0";
 					homingCount = "0";
 
-					Trigger = "5289";
+					Target = "38";
+					Trigger = "6015";
 					team = "2";
-					inUse = "Down";
-					Target = "34";
-					notReady = "1";
 				};
 				new StaticShape() {
-					position = "-185.076 13.2777 314.733";
-					rotation = "0 0 1 89.9544";
+					position = "-232.606 5.20597 314.587";
+					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					nameTag = "Inventory";
 					dataBlock = "StationInventory";
 					lockCount = "0";
 					homingCount = "0";
 
-					Trigger = "5291";
+					Target = "39";
+					Trigger = "6017";
 					team = "2";
-					Target = "35";
 				};
 				new Turret() {
-					position = "-181.567 -12.1634 323.342";
+					position = "-181.72 -12.1522 323.342";
 					rotation = "0 -1 0 90";
 					scale = "1 1 1";
 					nameTag = "Sentry";
@@ -565,48 +665,35 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 					initialBarrel = "SentryTurretBarrel";
 
+					Target = "40";
+					lastProjectile = "7446";
 					team = "2";
-					lastProjectile = "7020";
-					Target = "36";
 				};
 				new StaticShape() {
-					position = "-65.6252 34.7732 280.728";
-					rotation = "0 0 1 179.909";
+					position = "-232.606 -29.584 314.587";
+					rotation = "0 0 1 180";
 					scale = "1 1 1";
 					nameTag = "Inventory";
 					dataBlock = "StationInventory";
 					lockCount = "0";
 					homingCount = "0";
 
-					Trigger = "5294";
+					Target = "41";
+					Trigger = "6020";
 					team = "2";
-					Target = "37";
 				};
 				new StaticShape() {
-					position = "-80.0252 34.7503 280.728";
-					rotation = "0 0 1 179.909";
+					position = "-216.616 5.22597 314.587";
+					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					nameTag = "Inventory";
 					dataBlock = "StationInventory";
 					lockCount = "0";
 					homingCount = "0";
 
-					Trigger = "5296";
+					Target = "42";
+					Trigger = "6022";
 					team = "2";
-					Target = "38";
-				};
-				new StaticShape() {
-					position = "-105.468 -69.7598 280.709";
-					rotation = "0 0 1 134.645";
-					scale = "1 1 1";
-					nameTag = "Inventory";
-					dataBlock = "StationInventory";
-					lockCount = "0";
-					homingCount = "0";
-
-					Trigger = "5298";
-					team = "2";
-					Target = "39";
 				};
 			};
 			new Item() {
@@ -621,14 +708,14 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				team = "2";
-				WayPoint = "5344";
-				Trigger = "5345";
-				searchSchedule = "17342";
-				Target = "40";
-				isHome = "1";
-				originalPosition = "-158.48 -12.1548 314.627 0 0 1 1.5708";
 				className = "FlagObj";
+				Target = "43";
+				originalPosition = "-158.48 -12.1548 314.627 0 0 1 1.5708";
+				team = "2";
+				WayPoint = "6068";
+				Trigger = "6069";
+				searchSchedule = "17342";
+				isHome = "1";
 			};
 			new InteriorInstance() {
 				position = "-114.61 -12.1928 352.124";
@@ -644,14 +731,14 @@ new SimGroup(MissionGroup) {
 				powerCount = "0";
 
 				new SpawnSphere() {
-					position = "-225.81 -12.1153 315.087";
+					position = "-196.3 1.7547 315.087";
 					rotation = "1 0 0 0";
 					scale = "1 1 1";
 					dataBlock = "SpawnSphereMarker";
 					lockCount = "0";
 					homingCount = "0";
-					radius = "25";
-					sphereWeight = "30";
+					radius = "14";
+					sphereWeight = "25";
 					indoorWeight = "100";
 					outdoorWeight = "100";
 				};
@@ -663,7 +750,7 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 					radius = "20";
-					sphereWeight = "20";
+					sphereWeight = "25";
 					indoorWeight = "100";
 					outdoorWeight = "100";
 				};
@@ -675,7 +762,19 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 					radius = "20";
-					sphereWeight = "20";
+					sphereWeight = "25";
+					indoorWeight = "100";
+					outdoorWeight = "100";
+				};
+				new SpawnSphere() {
+					position = "-196.3 -26.7953 315.087";
+					rotation = "1 0 0 0";
+					scale = "1 1 1";
+					dataBlock = "SpawnSphereMarker";
+					lockCount = "0";
+					homingCount = "0";
+					radius = "14";
+					sphereWeight = "25";
 					indoorWeight = "100";
 					outdoorWeight = "100";
 				};
@@ -690,77 +789,8 @@ new SimGroup(MissionGroup) {
 				providesPower = "1";
 				powerCount = "1";
 
-				new StaticShape() {
-					position = "203.989 13.3361 314.645";
-					rotation = "0 0 -1 89.9544";
-					scale = "1 1 1";
-					nameTag = "Inventory";
-					dataBlock = "StationInventory";
-					lockCount = "0";
-					homingCount = "0";
-
-					Trigger = "5309";
-					team = "1";
-					inUse = "Down";
-					Target = "41";
-					notReady = "1";
-				};
-				new StaticShape() {
-					position = "203.948 -37.6639 314.645";
-					rotation = "0 0 -1 89.9544";
-					scale = "1 1 1";
-					nameTag = "Inventory";
-					dataBlock = "StationInventory";
-					lockCount = "0";
-					homingCount = "0";
-
-					Trigger = "5311";
-					team = "1";
-					inUse = "Down";
-					Target = "42";
-					notReady = "1";
-				};
-				new StaticShape() {
-					position = "84.3796 -59.1241 280.588";
-					rotation = "1 0 0 0";
-					scale = "1 1 1";
-					nameTag = "Inventory";
-					dataBlock = "StationInventory";
-					lockCount = "0";
-					homingCount = "0";
-
-					Trigger = "5313";
-					team = "1";
-					Target = "43";
-				};
-				new StaticShape() {
-					position = "98.9796 -59.1241 280.588";
-					rotation = "1 0 0 0";
-					scale = "1 1 1";
-					nameTag = "Inventory";
-					dataBlock = "StationInventory";
-					lockCount = "0";
-					homingCount = "0";
-
-					Trigger = "5315";
-					team = "1";
-					Target = "44";
-				};
-				new StaticShape() {
-					position = "124.632 45.1208 280.7";
-					rotation = "0 0 -1 45.2637";
-					scale = "1 1 1";
-					nameTag = "Inventory";
-					dataBlock = "StationInventory";
-					lockCount = "0";
-					homingCount = "0";
-
-					Trigger = "5317";
-					team = "1";
-					Target = "45";
-				};
 				new Turret() {
-					position = "200.341 -12.1034 323.343";
+					position = "200.48 -12.1522 323.342";
 					rotation = "0 1 0 89.9544";
 					scale = "1 1 1";
 					nameTag = "Sentry";
@@ -769,8 +799,62 @@ new SimGroup(MissionGroup) {
 					homingCount = "0";
 					initialBarrel = "SentryTurretBarrel";
 
+					Target = "44";
 					team = "1";
+				};
+				new StaticShape() {
+					position = "251.398 5.2039 314.587";
+					rotation = "1 0 0 0";
+					scale = "1 1 1";
+					nameTag = "Inventory";
+					dataBlock = "StationInventory";
+					lockCount = "0";
+					homingCount = "0";
+
+					Target = "45";
+					Trigger = "6035";
+					team = "1";
+				};
+				new StaticShape() {
+					position = "251.398 -29.5461 314.587";
+					rotation = "0 0 1 180";
+					scale = "1 1 1";
+					nameTag = "Inventory";
+					dataBlock = "StationInventory";
+					lockCount = "0";
+					homingCount = "0";
+
 					Target = "46";
+					Trigger = "6037";
+					team = "1";
+				};
+				new StaticShape() {
+					position = "235.398 -29.5461 314.587";
+					rotation = "0 0 1 180";
+					scale = "1 1 1";
+					nameTag = "Inventory";
+					dataBlock = "StationInventory";
+					lockCount = "0";
+					homingCount = "0";
+
+					Target = "47";
+					Trigger = "6039";
+					team = "1";
+				};
+				new StaticShape() {
+					position = "235.398 5.2039 314.587";
+					rotation = "1 0 0 0";
+					scale = "1 1 1";
+					nameTag = "Inventory";
+					dataBlock = "StationInventory";
+					lockCount = "0";
+					homingCount = "0";
+
+					Target = "48";
+					notReady = "1";
+					Trigger = "6041";
+					team = "1";
+					inUse = "Down";
 				};
 			};
 			new Item() {
@@ -785,14 +869,14 @@ new SimGroup(MissionGroup) {
 				static = "1";
 				rotate = "0";
 
-				team = "1";
-				WayPoint = "5346";
-				Trigger = "5347";
-				searchSchedule = "3570";
-				Target = "47";
-				isHome = "1";
-				originalPosition = "177.27 -12.1548 314.627 0 0 1 1.5708";
 				className = "FlagObj";
+				Target = "49";
+				originalPosition = "177.27 -12.1548 314.627 0 0 1 1.5708";
+				team = "1";
+				WayPoint = "6070";
+				Trigger = "6071";
+				searchSchedule = "3570";
+				isHome = "1";
 			};
 			new InteriorInstance(InteriorInstance) {
 				position = "133.39 -12.1928 352.124";
@@ -815,7 +899,7 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 					radius = "20";
-					sphereWeight = "20";
+					sphereWeight = "25";
 					indoorWeight = "100";
 					outdoorWeight = "100";
 				};
@@ -827,19 +911,31 @@ new SimGroup(MissionGroup) {
 					lockCount = "0";
 					homingCount = "0";
 					radius = "20";
-					sphereWeight = "20";
+					sphereWeight = "25";
 					indoorWeight = "100";
 					outdoorWeight = "100";
 				};
 				new SpawnSphere() {
-					position = "243.41 -12.6846 315.087";
+					position = "215.23 -25.4446 315.087";
 					rotation = "0 0 1 180";
 					scale = "1 1 1";
 					dataBlock = "SpawnSphereMarker";
 					lockCount = "0";
 					homingCount = "0";
-					radius = "25";
-					sphereWeight = "30";
+					radius = "14";
+					sphereWeight = "25";
+					indoorWeight = "100";
+					outdoorWeight = "100";
+				};
+				new SpawnSphere() {
+					position = "215.23 1.4554 315.087";
+					rotation = "0 0 1 180";
+					scale = "1 1 1";
+					dataBlock = "SpawnSphereMarker";
+					lockCount = "0";
+					homingCount = "0";
+					radius = "14";
+					sphereWeight = "25";
 					indoorWeight = "100";
 					outdoorWeight = "100";
 				};
@@ -847,25 +943,25 @@ new SimGroup(MissionGroup) {
 		};
 	};
 	new WaterBlock() {
-		position = "208 32 270.845";
+		position = "200 32 270.845";
 		rotation = "1 0 0 0";
 		scale = "32 32 118.294";
 		liquidType = "OceanWater";
 		density = "2000";
-		viscosity = "3";
+		viscosity = "5";
 		waveMagnitude = "1";
 		surfaceOpacity = "0.75";
 		envMapIntensity = "1";
 		removeWetEdges = "1";
 
-		textureSize = "32 32";
-		params2 = "0.39 0.39 0.2 0.133";
-		floodFill = "1";
-		seedPoints = "0 0 1 0 1 1 0 1";
 		extent = "100 100 10";
+		floodFill = "1";
 		params0 = "0.32 -0.67 0.066 0.5";
+		seedPoints = "0 0 1 0 1 1 0 1";
 		params1 = "0.63 -2.41 0.33 0.21";
 		params3 = "1.21 -0.61 0.13 -0.33";
+		textureSize = "32 32";
+		params2 = "0.39 0.39 0.2 0.133";
 	};
 	new WaterBlock() {
 		position = "-184 24 137.054";
@@ -873,20 +969,20 @@ new SimGroup(MissionGroup) {
 		scale = "64 64 118.294";
 		liquidType = "OceanWater";
 		density = "2000";
-		viscosity = "3";
+		viscosity = "5";
 		waveMagnitude = "1";
 		surfaceOpacity = "0.75";
 		envMapIntensity = "1";
 		removeWetEdges = "1";
 
-		textureSize = "32 32";
-		params2 = "0.39 0.39 0.2 0.133";
-		floodFill = "1";
-		seedPoints = "0 0 1 0 1 1 0 1";
 		extent = "100 100 10";
+		floodFill = "1";
 		params0 = "0.32 -0.67 0.066 0.5";
+		seedPoints = "0 0 1 0 1 1 0 1";
 		params1 = "0.63 -2.41 0.33 0.21";
 		params3 = "1.21 -0.61 0.13 -0.33";
+		textureSize = "32 32";
+		params2 = "0.39 0.39 0.2 0.133";
 	};
 	new WaterBlock() {
 		position = "144 -120 137.054";
@@ -894,23 +990,23 @@ new SimGroup(MissionGroup) {
 		scale = "64 64 118.294";
 		liquidType = "OceanWater";
 		density = "2000";
-		viscosity = "3";
+		viscosity = "5";
 		waveMagnitude = "1";
 		surfaceOpacity = "0.75";
 		envMapIntensity = "1";
 		removeWetEdges = "1";
 
-		textureSize = "32 32";
-		params2 = "0.39 0.39 0.2 0.133";
-		floodFill = "1";
-		seedPoints = "0 0 1 0 1 1 0 1";
 		extent = "100 100 10";
+		floodFill = "1";
 		params0 = "0.32 -0.67 0.066 0.5";
+		seedPoints = "0 0 1 0 1 1 0 1";
 		params1 = "0.63 -2.41 0.33 0.21";
 		params3 = "1.21 -0.61 0.13 -0.33";
+		textureSize = "32 32";
+		params2 = "0.39 0.39 0.2 0.133";
 	};
 	new AudioEmitter() {
-		position = "172.957 -76.2539 240.348";
+		position = "176.157 -103.054 236.148";
 		rotation = "1 0 0 0";
 		scale = "1 1 1";
 		profile = "ScoutEngineSound";
@@ -920,8 +1016,8 @@ new SimGroup(MissionGroup) {
 		volume = "1";
 		isLooping = "1";
 		is3D = "1";
-		minDistance = "1";
-		maxDistance = "30";
+		minDistance = "50";
+		maxDistance = "50.01";
 		coneInsideAngle = "360";
 		coneOutsideAngle = "360";
 		coneOutsideVolume = "1";
@@ -932,7 +1028,7 @@ new SimGroup(MissionGroup) {
 		type = "EffectAudioType";
 	};
 	new AudioEmitter() {
-		position = "-194.243 -60.654 289.748";
+		position = "-194.243 -134.054 295.148";
 		rotation = "1 0 0 0";
 		scale = "1 1 1";
 		profile = "ScoutEngineSound";
@@ -942,8 +1038,8 @@ new SimGroup(MissionGroup) {
 		volume = "1";
 		isLooping = "1";
 		is3D = "1";
-		minDistance = "1";
-		maxDistance = "5";
+		minDistance = "50";
+		maxDistance = "50.01";
 		coneInsideAngle = "360";
 		coneOutsideAngle = "360";
 		coneOutsideVolume = "1";
@@ -954,29 +1050,7 @@ new SimGroup(MissionGroup) {
 		type = "EffectAudioType";
 	};
 	new AudioEmitter() {
-		position = "214.539 37.68 278.548";
-		rotation = "1 0 0 0";
-		scale = "1 1 1";
-		profile = "ScoutEngineSound";
-		description = "AudioDefaultLooping3d";
-		useProfileDescription = "1";
-		outsideAmbient = "1";
-		volume = "1";
-		isLooping = "1";
-		is3D = "1";
-		minDistance = "1";
-		maxDistance = "5";
-		coneInsideAngle = "360";
-		coneOutsideAngle = "360";
-		coneOutsideVolume = "0";
-		coneVector = "0 0 1";
-		loopCount = "-1";
-		minLoopGap = "0";
-		maxLoopGap = "0";
-		type = "EffectAudioType";
-	};
-	new AudioEmitter() {
-		position = "-152.443 53.5461 253.748";
+		position = "214.557 101.946 295.748";
 		rotation = "1 0 0 0";
 		scale = "1 1 1";
 		profile = "ScoutEngineSound";
@@ -986,8 +1060,30 @@ new SimGroup(MissionGroup) {
 		volume = "1";
 		isLooping = "1";
 		is3D = "1";
-		minDistance = "1";
-		maxDistance = "30";
+		minDistance = "50";
+		maxDistance = "50.01";
+		coneInsideAngle = "360";
+		coneOutsideAngle = "360";
+		coneOutsideVolume = "1";
+		coneVector = "0 0 1";
+		loopCount = "-1";
+		minLoopGap = "0";
+		maxLoopGap = "0";
+		type = "EffectAudioType";
+	};
+	new AudioEmitter() {
+		position = "-159.643 70.7461 239.148";
+		rotation = "1 0 0 0";
+		scale = "1 1 1";
+		profile = "ScoutEngineSound";
+		description = "AudioDefaultLooping3d";
+		useProfileDescription = "0";
+		outsideAmbient = "1";
+		volume = "1";
+		isLooping = "1";
+		is3D = "1";
+		minDistance = "50";
+		maxDistance = "50.01";
 		coneInsideAngle = "360";
 		coneOutsideAngle = "360";
 		coneOutsideVolume = "1";
@@ -1082,6 +1178,8 @@ new SimGroup(MissionGroup) {
 		minLoopGap = "0";
 		maxLoopGap = "0";
 		type = "EffectAudioType";
+	};
+	new SimGroup() {
 	};
 };
 //--- OBJECT WRITE END ---
