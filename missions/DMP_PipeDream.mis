@@ -717,7 +717,7 @@ new SimGroup(MissionGroup) {
 				};
 			};
 			new Item() {
-				position = "-66.512 -0.664162 257.165";
+				position = "-158.48 -12.1548 314.627";
 				rotation = "0 0 1 90.0002";
 				scale = "1 1 1";
 				nameTag = "Flag";
@@ -725,18 +725,17 @@ new SimGroup(MissionGroup) {
 				lockCount = "0";
 				homingCount = "0";
 				collideable = "0";
-				static = "0";
+				static = "1";
 				rotate = "0";
 
-				searchSchedule = "21914";
-				className = "FlagObj";
-				grabber = "5951";
-				isHome = "0";
 				originalPosition = "-158.48 -12.1548 314.627 0 0 1 1.5708";
 				team = "2";
-				WayPoint = "6079";
-				Trigger = "6080";
-				Target = "43";
+				WayPoint = "6050";
+				Trigger = "6051";
+				Target = "40";
+				searchSchedule = "17342";
+				isHome = "1";
+				className = "FlagObj";
 			};
 			new InteriorInstance() {
 				position = "-114.61 -12.1928 352.124";
