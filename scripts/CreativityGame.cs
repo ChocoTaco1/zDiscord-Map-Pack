@@ -17,11 +17,12 @@
 // this isn't clearly ripped from TR2
 
 package jumpPad{
-   function Armor::onImpact(%data, %playerObject, %collidedObject, %vec, %vecLen){
-      if(%collidedObject.getDataBlock().getName() !$= "CreativityPad"){
-         parent::onImpact(%data, %playerObject, %collidedObject, %vec, %vecLen);
-      }
-   }  
+	function Armor::onImpact(%data, %playerObject, %collidedObject, %vec, %vecLen){
+		if(isObject(%collidedObject) && %collidedObject.getDataBlock().getName() $= "CreativityPad"){
+			return;
+		}
+		parent::onImpact(%data, %playerObject, %collidedObject, %vec, %vecLen);
+	}  
 }; 
 if(!isActivePackage(jumpPad)) 
    activatePackage(jumpPad); 
